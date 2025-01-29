@@ -8,29 +8,36 @@ const my_font = Cormorant_Garamond({ weight: '400' });
 
 export default function Header() {
   return (
-    <header className={my_font.className}>
+    <header className={`${my_font.className}`} >
       <nav className="flex items-center gap-7 justify-center fixed left-0 right-0 top-0 bg-white text-black">
-        {NAVIGATION.slice(0, 2).map((nav) => {
+        {NAVIGATION.slice(0, 1).map((nav) => {
           return <NavItem href={nav.href} label={nav.label} key={nav.href} />;
         })}
-        <Image src="/assets/images/Vector.svg"
-               width={8}
-               height={4}
-               alt="vector"
-        />
+        <div className="flex flex-row gap-2">
+          {NAVIGATION.slice(1, 2).map((nav) => {
+            return <NavItem href={nav.href} label={nav.label} key={nav.href} />;
+          })}    
+          <Image src="/assets/images/Vector.svg"
+                  width={8}
+                  height={4}
+                  alt="vector"
+          />
+        </div>
         {NAVIGATION.slice(2, 3).map((nav) => {
           return <NavItem href={nav.href} label={nav.label} key={nav.href} />;
         })}
         <Logo />
-        {NAVIGATION.slice(3, 4).map((nav) => {
-          return <NavItem href={nav.href} label={nav.label} key={nav.href} />;
-        })}
-        <Image src="/assets/images/Vector.svg"
-               width={8}
-               height={4}
-               alt="vector"
-               className="left-8"
-        />
+        <div className="flex flex-row gap-2">
+          {NAVIGATION.slice(3, 4).map((nav) => {
+            return <NavItem href={nav.href} label={nav.label} key={nav.href} />;
+          })}
+          <Image src="/assets/images/Vector.svg"
+                width={8}
+                height={4}
+                alt="vector"
+                className="left-8"
+          />
+        </div>
         {NAVIGATION.slice(4).map((nav) => {
           return <NavItem href={nav.href} label={nav.label} key={nav.href} />;
         })}
