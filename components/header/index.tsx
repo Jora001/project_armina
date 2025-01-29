@@ -4,7 +4,7 @@ import Logo from "../logo";
 import Image from "next/image";
 import { Cormorant_Garamond } from "next/font/google";
 
-const my_font = Cormorant_Garamond({ weight: '600' });
+const my_font = Cormorant_Garamond({ weight: '400' });
 
 export default function Header() {
   return (
@@ -13,7 +13,7 @@ export default function Header() {
         {NAVIGATION.slice(0, 2).map((nav) => {
           return <NavItem href={nav.href} label={nav.label} key={nav.href} />;
         })}
-        <Image src="/assets/images/Vector.png"
+        <Image src="/assets/images/Vector.svg"
                width={8}
                height={4}
                alt="vector"
@@ -22,7 +22,16 @@ export default function Header() {
           return <NavItem href={nav.href} label={nav.label} key={nav.href} />;
         })}
         <Logo />
-        {NAVIGATION.slice(3).map((nav) => {
+        {NAVIGATION.slice(3, 4).map((nav) => {
+          return <NavItem href={nav.href} label={nav.label} key={nav.href} />;
+        })}
+        <Image src="/assets/images/Vector.svg"
+               width={8}
+               height={4}
+               alt="vector"
+               className="left-8"
+        />
+        {NAVIGATION.slice(4).map((nav) => {
           return <NavItem href={nav.href} label={nav.label} key={nav.href} />;
         })}
       </nav>
