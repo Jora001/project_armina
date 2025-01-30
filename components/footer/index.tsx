@@ -6,7 +6,7 @@ const my_font1 = Cormorant_Garamond({weight: "400"});
 const my_font2 = Karla({weight: "400"});
 
 export default function Footer(){
-    return (<footer className={`${my_font1.className} bg-maincolor flex justify-between items-center border-t border-[#6B6B6B24] h-[300px] pl-[100px] relative`}>
+    return (<footer className={`${my_font1.className} bg-maincolor flex justify-between items-center border-t border-[#6B6B6B24] h-[300px] pl-[100px] relative border-b border-[#6B6B6B]`}>
         <div className="flex">
             <Logo />
             <div>
@@ -26,16 +26,20 @@ export default function Footer(){
                 <span className={`${my_font2.className} text-[#626262] text-[12.39px] leading-[14.48px] absolute bottom-[17px] ml-10`}>©  Alle Rechte vorbehalten | Armina Aristak</span>
             </div>
         </div>
-        <div className= {`${my_font2.className} text-[#404040] flex border-l border-[#919191] text-[12.39px] leading-[14.48px] pl-[45px]`}>
+        <div className= {`${my_font2.className} text-[#404040] flex border-l border-[#919191] text-[12.39px] leading-[14.48px] pl-[45px] pt-[20px] pb-[20px] pr-[110px]`}>
             <div className= "flex flex-col w-[171.55px] h-[139.14px] justify-evenly">
-                <span className={`${my_font1.className} text-black text-[13.34px] leading-[16.16px]`}>Schule fur musik & kunst</span>
+                <div className={`${my_font1.className}`}>
+                    <span className= "font-[700] text-black text-[13.34px] leading-[16.16px]">Schule fur musik & kunst</span>
+                </div>
                 <span className="">Concept</span>
                 <span>Subject</span>
                 <span>Schuller</span>
                 <span>Projects</span>
             </div>
             <div className="flex flex-col w-[143.91px] h-[140.01px] justify-evenly">
-                <span className={`${my_font1.className} text-black text-[13.34px] leading-[16.16px]`}>Armina Aristak</span>
+                <div className={`${my_font1.className}`}>
+                    <span className="font-[700] text-black text-[13.34px] leading-[16.16px]">Armina Aristak</span>
+                </div>
                 <span>Vita</span>
                 <span>Videos</span>
                 <span>Bilder</span>
