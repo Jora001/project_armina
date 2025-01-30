@@ -6,7 +6,7 @@ const my_font1 = Cormorant_Garamond({weight: "400"});
 const my_font2 = Karla({weight: "400"});
 
 export default function Footer(){
-    return (<footer className={`${my_font1.className} bg-maincolor flex justify-between items-center border-t border-[#6B6B6B24] h-[300px] pl-[100px] relative border-b border-[#6B6B6B]`}>
+    return (<footer className={`${my_font1.className} bg-maincolor flex justify-between items-center border-t border-[#6B6B6B24] h-[300px] pl-[100px] absolute bottom-0 right-0 border-b left-0 border-[#6B6B6B]`}>
         <div className="flex">
             <Logo />
             <div>
@@ -31,7 +31,7 @@ export default function Footer(){
                 <div className={`${my_font1.className}`}>
                     <span className= "font-[700] text-black text-[13.34px] leading-[16.16px]">Schule fur musik & kunst</span>
                 </div>
-                <span className="">Concept</span>
+                <span>Concept</span>
                 <span>Subject</span>
                 <span>Schuller</span>
                 <span>Projects</span>
