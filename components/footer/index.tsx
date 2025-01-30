@@ -26,15 +26,15 @@ export default function Footer(){
                 <span className={`${my_font2.className} text-[#626262] text-[12.39px] leading-[14.48px] absolute bottom-[17px] ml-10`}>©  Alle Rechte vorbehalten | Armina Aristak</span>
             </div>
         </div>
-        <div className= {`${my_font2.className} text-[#404040] flex border-l border-[#919191] text-[12.39px] leading-[14.48px]`}>
-            <div className= "flex flex-col">
+        <div className= {`${my_font2.className} text-[#404040] flex border-l border-[#919191] text-[12.39px] leading-[14.48px] pl-[45px]`}>
+            <div className= "flex flex-col w-[171.55px] h-[139.14px] justify-evenly">
                 <span className={`${my_font1.className} text-black text-[13.34px] leading-[16.16px]`}>Schule fur musik & kunst</span>
-                <span>Concept</span>
+                <span className="">Concept</span>
                 <span>Subject</span>
                 <span>Schuller</span>
                 <span>Projects</span>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col w-[143.91px] h-[140.01px] justify-evenly">
                 <span className={`${my_font1.className} text-black text-[13.34px] leading-[16.16px]`}>Armina Aristak</span>
                 <span>Vita</span>
                 <span>Videos</span>
