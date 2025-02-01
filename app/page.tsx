@@ -1,4 +1,7 @@
- import Image from "next/image";
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
  // import Link from "next/link";
 
 export default function Home() {
@@ -6,6 +9,7 @@ export default function Home() {
     
     <div className="h-[100vh] bg-[url('/assets/images/image1.svg')] mt-[2vh] bg-cover bg-center relative">
        <div className="h-[100vh] absolute inset-0" style={{ backgroundColor: "rgba(42, 46, 57, 0.51)" }}>
+
         <img src="/assets/images/group16.png" className="absolute top-[320px] left-[1250px] " />
           <div className="w-[80%] mx-auto flex flex-col gap-[0rem] h-[100%] justify-center">
             <p className="font-cormorant text-[28px] text-[#C29E76] ">Schul</p>
@@ -153,6 +157,8 @@ export default function Home() {
 </div>
   </div>
   </div>
+  {/* <Footer/> */}
+
   </div>
      
   );
