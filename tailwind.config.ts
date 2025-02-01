@@ -11,10 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        gold: '#FFD700', // Ոսկեգույնի ավելացում
       },
-      backgroundColor: {
-        maincolor: "#EFEBE8",
-      }
     },
   },
   plugins: [],
