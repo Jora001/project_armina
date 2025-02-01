@@ -10,7 +10,7 @@ function NavItem({ ...props }: INavItemProps) {
   const { label, href } = props;
   return (
     <Link href={href}>
-      <button>{label}</button>
+      <button className= "hover:text-[#C29E76] duration-200 ">{label}</button>
     </Link>
   );
 }
