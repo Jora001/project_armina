@@ -8,7 +8,7 @@ const my_font = Cormorant_Garamond({ weight: "400", subsets: ["latin"] });
 
 export default function Header() {
   return (
-    <header className={`${my_font.className} pt-3 sticky top-0 z-10`}>
+    <header className={`${my_font.className}  sticky top-0 z-10`}>
       <nav className="flex items-center gap-7 justify-center position-fixed left-0 right-0 top-0 bg-white text-black pt-3 pr-150 pl-150">
         {NAVIGATION.slice(0, 1).map((nav) => (
           <NavItem href={nav.href} label={nav.label} key={nav.href} />

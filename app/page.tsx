@@ -46,48 +46,96 @@ export default function Home() {
                     </nav>
                   </div>
     
-                    <div className="h-[130vh] bg-[#EFEBE8] flex">
-                      <Image src="/assets/images/square.svg"alt="square" width={265} height={327} className="ml-[260] mt-[250] absolute" />
-                        <Image src="/assets/images/image2.svg" alt="image2" width={416} height={416} className="absolute ml-[125] mt-[120] shadow-xl"/>
-                          <div className="items-center justify-center absolute ml-[600] mt-[120]">
-                             <p className="text-[80px] text-[#1E2B3B]  font-cormorant font-weight font-medium">Exploring The Beauty <br></br>Of Adornments</p>
-                              <div className="flex items-center gap-4 ml-1.5">
-                                <Image src="/assets/images/line.svg" width={7} height={0.8} alt="line" className="drop-shadow-lg"/>
-                                  <p className="text-[20px] font-Karla text-[#1E2B3B] font-light leading-[1.1]">
-                                      Ziel der Schule für Musik und Kunst Armina Aristak ist es, die Schüler <br></br>
-                                      auf ein hohes künstlerisches Niveau zu bringen. Sie bietet Gesangs-, <br></br>
-                                      Instrumental- und Schauspiel-Unterricht an. Kinder und Jugendliche, <br></br>
-                                      Erwachsene und Senioren singen, spielen und schauspielern.
-                                    </p>
-                              </div>
-                            </div>
+                  <div className="h-[130vh] bg-[#EFEBE8] flex relative">
+  {/* First image */}
+  <Image
+    src="/assets/images/square.svg"
+    alt="square"
+    width={265}
+    height={327}
+    className="ml-[260px] mt-[250px] absolute"
+  />
+  {/* Second image */}
+  <Image
+    src="/assets/images/image2.svg"
+    alt="image2"
+    width={416}
+    height={416}
+    className="absolute ml-[125px] mt-[120px] shadow-xl"
+  />
+  
+  {/* Text Content */}
+  <div className="absolute ml-[600px] mt-[120px] flex flex-col items-center justify-center">
+    <p className="text-[80px] text-[#1E2B3B] font-cormorant font-medium text-center">
+      Exploring The Beauty <br />
+      Of Adornments
+    </p>
+    <div className="flex items-center gap-4 ml-1.5">
+      <Image
+        src="/assets/images/line.svg"
+        width={7}
+        height={0.8}
+        alt="line"
+        className="drop-shadow-lg"
+      />
+      <p className="text-[20px] font-Karla text-[#1E2B3B] font-light leading-[1.1]">
+        Ziel der Schule für Musik und Kunst Armina Aristak ist es, die Schüler <br />
+        auf ein hohes künstlerisches Niveau zu bringen. Sie bietet Gesangs-, <br />
+        Instrumental- und Schauspiel-Unterricht an. Kinder und Jugendliche, <br />
+        Erwachsene und Senioren singen, spielen und schauspielern.
+      </p>
+    </div>
+  </div>
 
-                              <div className="flex justify-between items-start gap-[95px] mt-[600px] ml-[200px] space-x-12">
-                                <div className="w-1/3 flex flex-col items-start">
-                                    <p className="flex flex-col items-start self-start">
-                                     <span className="text-[80px] font-cormorant text-[#1E2B3B] font-bold">10+</span>
-                                        <span className="text-[24px] font-cormorant text-[#1E2B3B] font-bold">Allüren der Erfahrung</span>
-                                          <span className="text-[20px] font-Karla text-[#1E2B3B] ">Lorem ipsum dolor sit amet.</span>
-                                     </p>
-                                 </div>
+  {/* Stat Sections */}
+  <div className="flex justify-between items-start gap-[95px] mt-[600px] ml-[200px] space-x-12">
+    {/* Stat 1 */}
+    <div className="w-1/3 flex flex-col items-start">
+      <p className="flex flex-col items-start">
+        <span className="text-[80px] font-cormorant text-[#1E2B3B] font-bold">
+          10+
+        </span>
+        <span className="text-[24px] font-cormorant text-[#1E2B3B] font-bold">
+          Allüren der Erfahrung
+        </span>
+        <span className="text-[20px] font-Karla text-[#1E2B3B]">
+          Lorem ipsum dolor sit amet.
+        </span>
+      </p>
+    </div>
 
-                                    <div className="w-1/3 flex flex-col items-start">
-                                      <p className="flex flex-col items-start  self-start">
-                                        <span className="text-[80px] font-cormorant text-[#1E2B3B] font-bold">8+</span>
-                                        <span className="text-[24px] font-cormorant text-[#1E2B3B] font-bold ">Allüren der Erfahrung</span>
-                                        <span className="text-[20px] font-Karla text-[#1E2B3B] ">Lorem ipsum dolor sit amet.</span>
-                                      </p>
-                                    </div>
+    {/* Stat 2 */}
+    <div className="w-1/3 flex flex-col items-start">
+      <p className="flex flex-col items-start">
+        <span className="text-[80px] font-cormorant text-[#1E2B3B] font-bold">
+          8+
+        </span>
+        <span className="text-[24px] font-cormorant text-[#1E2B3B] font-bold">
+          Allüren der Erfahrung
+        </span>
+        <span className="text-[20px] font-Karla text-[#1E2B3B]">
+          Lorem ipsum dolor sit amet.
+        </span>
+      </p>
+    </div>
 
-                                      <div className="w-1/3 flex flex-col items-start">
-                                        <p className="flex flex-col items-start  self-start">
-                                          <span className="text-[80px] font-cormorant text-[#1E2B3B] font-bold">120+</span>
-                                          <span className="text-[24px] font-cormorant text-[#1E2B3B] font-bold ">Studenten</span>
-                                          <span className="text-[20px] font-Karla text-[#1E2B3B] ">Lorem ipsum dolor sit amet.</span>
-                                        </p>
-                                      </div>
-                                    </div>
-                      </div>
+    {/* Stat 3 */}
+    <div className="w-1/3 flex flex-col items-start">
+      <p className="flex flex-col items-start">
+        <span className="text-[80px] font-cormorant text-[#1E2B3B] font-bold">
+          120+
+        </span>
+        <span className="text-[24px] font-cormorant text-[#1E2B3B] font-bold">
+          Studenten
+        </span>
+        <span className="text-[20px] font-Karla text-[#1E2B3B]">
+          Lorem ipsum dolor sit amet.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
 
         <div className="flex h-auto">
           <div className="">
