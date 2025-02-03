@@ -1,11 +1,16 @@
 export const NAVIGATION = [
   {
-    label: " Willkommen",
+    label: "Willkommen",
     href: "/",
   },
   {
     label: "Schule für Musik & Kunst",
     href: "/schule",
+    submenu: [
+      { label: "Konzept", href: "/konzept" },
+      { label: "FÄCHER", href: "/facher" },
+      { label: "Schuller", href: "/schuller" },
+    ],
   },
   {
     label: "Projekte",
@@ -14,6 +19,12 @@ export const NAVIGATION = [
   {
     label: "Armina Aristak",
     href: "/armina",
+    submenu: [
+      { label: "Vita", href: "/vita" },
+      { label: "MEINE VIDEOS", href: "/menvideos" },
+      { label: "Bilder", href: "/bilder" },
+      
+    ],
   },
   {
     label: "Bewertungen",
