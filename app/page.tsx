@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/alt-text */
 
-import { Footer } from "@/components";
+// import { Footer } from "@/components";
 import Image from "next/image";
  // import Link from "next/link";
 
@@ -209,7 +209,7 @@ export default function Home() {
   </div>
 <section className="rrr">
 
-  <Footer/>
+  {/* <Footer/> */}
 
 
 </section>
