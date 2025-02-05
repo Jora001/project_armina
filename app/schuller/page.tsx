@@ -1,8 +1,13 @@
+import { Callsec } from '@/components/callsec'
 import React from 'react'
 
 const schuller = () => {
   return (
-    <div className='ttt'>schuller</div>
+    <div className='ttt'>
+      
+      <Callsec/>
+      
+    </div>
   )
 }
 
