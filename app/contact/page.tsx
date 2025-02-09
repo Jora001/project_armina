@@ -56,7 +56,6 @@ const Contact = () => {
           <p className="text-lg md:text-2xl font-Karla">andreaDesign@gmail.com</p>                      
         </div>
         
-        {/* Phone */}
         <div className='flex items-center gap-4'>  
           <Image 
             src="/assets/images/phone_icon.svg" 
