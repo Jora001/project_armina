@@ -1,14 +1,15 @@
+
 import React from "react";
 import { Cormorant_Garamond, Karla } from "next/font/google";
 import Image from "next/image";
 
 const my_font = Cormorant_Garamond({
   weight: "400",
-  subsets: ["latin"], // Specify a subset for the Cormorant Garamond font
+  subsets: ["latin"],
 });
 const my_font2 = Karla({
   weight: "300",
-  subsets: ["latin"], // Specify a subset for the Karla font
+  subsets: ["latin"],
 });
 
 const konzept = () => {
