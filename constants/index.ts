@@ -1,3 +1,4 @@
+
 export const NAVIGATION = [
   {
     label: "Willkommen",
@@ -8,7 +9,15 @@ export const NAVIGATION = [
     href: "/schule",
     submenu: [
       { label: "Konzept", href: "/konzept" },
-      { label: "FÄCHER", href: "/facher" },
+      {
+        label: "FÄCHER",
+        href: "/facher",
+        submenu: [
+          { label: "Stimmbildung", href: "/stimmbildung" },
+          { label: "Schauspiel", href: "/schauspiel" },
+          { label: "Instrumental Unterricht", href: "/instrumental" },
+        ],
+      },
       { label: "Schuller", href: "/schuller" },
     ],
   },
@@ -23,7 +32,6 @@ export const NAVIGATION = [
       { label: "Vita", href: "/vita" },
       { label: "MEINE VIDEOS", href: "/menvideos" },
       { label: "Bilder", href: "/bilder" },
-      
     ],
   },
   {
