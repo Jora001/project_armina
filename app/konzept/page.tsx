@@ -1,4 +1,4 @@
-
+"use client";
 import React from "react";
 import { Cormorant_Garamond, Karla } from "next/font/google";
 import Image from "next/image";
