@@ -206,44 +206,48 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="flex flex-col md:flex-row h-auto">
-  <div className="w-full md:w-[531px]">
-    <Image 
-      src="/assets/images/image3.svg" 
-      alt="image3" 
-      width={531} 
-      height={608} 
-      className="block w-full"
-    />
-  </div>
-        <div className="flex-1 bg-[#1E2B3B] text-white flex flex-col justify-center w-full md:w-[80%] mx-auto">
-    <div className="flex flex-col items-start w-[80%] mx-auto mt-[50px]">
-      <Image 
-        src="/assets/images/image4.svg" 
-        alt="image4" 
-        width={80} 
-        height={84} 
-        className="absolute mr-[715px] mb-[370]"
-      />
-      <p className="md:text-[33.36px] font-cormorant w-[80%] font-bold mt-[90px]">Armina Aristak</p>
-                    <p className="md:text-[20px] font-Karla w-[100%] font-thin mt-5 whitespace-normal">
-                      Doctoral student in music education at the Martin Luther University Halle-
-                      Wittenberg. Scholarship holder of the SWR vocal ensemble. Prize winner 2016  
-                      and 2018 at the International Festival Young Opera Singer Schloss Rheinsberg,  
-                      where she appeared in numerous concerts and opera performances. The work  
-                      with various conductors and directors left a deep and positive impression on  
-                      their musical life path.
-                      <br /><br />
-                      This was followed by performances with the Brandenburg Orchestra,  
-                      participation in various opera performances with small solo games as well as  
-                      solo concerts in Baden-Baden, Gechingen, Göppingen, Stuttgart, Mittelbergheim.
-                  </p>
-                    <p className="text-[#B7B7B7] font-Karla text-[18px] cursor-pointer mt-6 self-start m-0 p-0 underline text-thin">
-                      Read more
-                    </p>
-    </div>
-  </div>
-</div>
+      <div className="flex h-auto">
+        <div className="">
+          <Image
+            src="/assets/images/image3.svg"
+            alt="image3"
+            width={531}
+            height={608}
+          />
+        </div>
+        <div className="flex-1 bg-[#1E2B3B] text-white flex flex-col justify-center  w-[80%] mx-auto ">
+          <div className="flex flex-col items-start w-[80%] mx-auto mt-[50px]">
+            <Image
+              src="/assets/images/image4.svg"
+              alt="image4"
+              width={80}
+              height={84}
+              className="absolute mr-[715px] mb-[370]"
+            />
+            <p className="md:text-[33.36px] font-cormorant w-[80%] font-bold mt-[90px]">
+              Armina Aristak
+            </p>
+            <p className="md:text-[20px] font-Karla w-[100%] font-thin mt-5 whitespace-normal">
+              Doctoral student in music education at the Martin Luther
+              University Halle- Wittenberg. Scholarship holder of the SWR vocal
+              ensemble. Prize winner 2016 and 2018 at the International Festival
+              Young Opera Singer Schloss Rheinsberg, where she appeared in
+              numerous concerts and opera performances. The work with various
+              conductors and directors left a deep and positive impression on
+              their musical life path.
+              <br />
+              <br />
+              This was followed by performances with the Brandenburg Orchestra,
+              participation in various opera performances with small solo games
+              as well as solo concerts in Baden-Baden, Gechingen, Göppingen,
+              Stuttgart, Mittelbergheim.
+            </p>
+            <p className="text-[#B7B7B7] font-Karla text-[18px] cursor-pointer mt-6 self-start m-0 p-0 underline text-thin">
+              Read more
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="h-[125vh] bg-[#EFEBE8]">
         <div className="flex flex-col items-center justify-center">
           <p className="font-cormorant text-[40px] text-[#1E2B3B] mt-[40px] font-bold">
@@ -290,36 +294,39 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="bg-[#EFEBE8] py-12 sm:py-16 md:py-20">
-  <div className="container mx-auto px-4 sm:px-6 md:px-8">
-    <div className="relative mb-12 sm:mb-16">
-      <Image 
-        src="/assets/images/vertical_line.svg" 
-        alt="vertical_line" 
-        width={7} 
-        height={45} 
-        className="absolute left-0 sm:left-4 md:left-8"
-      />
-<div className="grid grid-cols-2 items-center">
-  <h1 className="font-cormorant text-3xl sm:text-4xl md:text-[60px] text-[#000000] pl-8 sm:pl-12 md:pl-16 font-medium">
-    Was Unsere Schüler Sagen
-  </h1>
-  <span className="text-[#1E2B3B] md:text-[20px] font-cormorant font-bold border-2 border-[#1E2B3B] 
-                   px-5 py-2 cursor-pointer hover:shadow-2xl transition-all duration-500 
-                   justify-self-end text-right mr-5 sm:mr-10 md:mr-16">
-    Alles sehen
-  </span>
-</div>
-</div>
-</div>
-</div>
-        <div className="bg-[#EFEBE8] min-h-screen flex  ">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
-            <div className="p-3 sm:p-5">
-              <h2 className="text-2xl md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
+        <div className="bg-[#EFEBE8] h-[40vh]">
+          <Image
+            src="/assets/images/vertical_line.svg"
+            alt="vertical_line"
+            width={7}
+            height={45}
+            className="mt-[100px] ml-[130px] absolute"
+          />
+          <p className="font-cormorant md:text-[60px] text-[#000000] mt-[80px] ml-[150px] absolute font-medium">
+            Was Unsere Schüler Sagen
+          </p>
+          <p
+            className="text-[#1E2B3B] md:text-[20px] font-cormorant   absolute mt-[110px] ml-[1250px] font-bold border-2
+
+
+
+
+
+                        border-[#1E2B3B] px-5 py-2 cursor-pointer hover:shadow-2xl transition-all duration-500 "
+          >
+            Alles sehen
+          </p>
+        </div>
+
+
+        
+        <div className="bg-[#EFEBE8] min-h-[60vh] flex ">
+          <div className="container mx-auto grid grid-cols-3 gap-10 justify-center ml-[80px]">
+            <div className="text-left">
+              <h2 className="md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
                 Petra Harres
               </h2>
-              <p className="text-sm sm:text-base md:text-[16px] text-[#000000] font-karla font-thin">
+              <p className="md:text-[16px] text-[#000000] font-karla font-thin">
                 I searched the Internet for a singing teacher and came acome
                 into Armina - an absolute stroke of luck!!! She has a great,
                 expressive and powerful voice and is a very sensitive, talented
@@ -328,11 +335,11 @@ export default function Home() {
                 her is a win and on top of that it's really fun
               </p>
             </div>
-            <div className="p-4 sm:p-6">
-              <h2 className="text-2xl md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
+            <div className="text-left">
+              <h2 className="md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
                 Meyer Irmgard
               </h2>
-              <p className="text-sm sm:text-base md:text-[16px] text-[#000000] font-karla font-thin ">
+              <p className="md:text-[16px] text-[#000000] font-karla font-thin ">
                 My daughter gave me singing lessons at Armina's.Armina has a
                 great voice, works with great joy and transmits this joy.
                 Sensitive and competent she teaches singing techniques and
@@ -340,11 +347,11 @@ export default function Home() {
                 could be heard. It was a lot of fun!
               </p>
             </div>
-            <div className="p-4 sm:p-6">
-              <h2 className="text-2xl md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
+            <div className="text-left">
+              <h2 className="md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
                 Meyer Irmgard
               </h2>
-              <p className="text-sm sm:text-base md:text-[16px] text-[#000000] font-karla font-thin ">
+              <p className="md:text-[16px] text-[#000000] font-karla font-thin ">
                 My daughter gave me singing lessons at Armina's.Armina has a
                 great voice, works with great joy and transmits this joy.
                 Sensitive and competent she teaches singing techniques and
@@ -362,6 +369,7 @@ export default function Home() {
   </div>
 </div>
       </div>
+        
     </div>
   );
 }
