@@ -7,16 +7,16 @@ const Bewertungen = () => {
   return (
     <div className=''> 
       <Header/>
-      <div className='container mx-auto mt-[100px]'>
-<       div className=' bg-[#EFEBE8] mt-[20px]'>
-            <div className='flex gap-1 ml-[9rem]'>
+      <div className='container mx-auto mt-16 md:mt-24 lg:mt-32'>
+<       div className=' bg-[#EFEBE8] mt-4 md:mt-6 lg:mt-8'>
+            <div className='flex gap-1 ml-4 md:ml-8 lg:ml-36'>
               <Image src='/assets/images/vertical_line.svg' alt='vertical_line' width={7} height={45} className='mt-[10px]'/>
-                <span className='md:text-[60px] font-cormorant mt-[10px]'>
+                <span className='text-3xl md:text-5xl lg:text-6xl font-cormorant mt-2 md:mt-4'>
                   Was Unsere Schüler Sagen
                 </span>
             </div>
 
-           <div className="grid grid-cols-2 gap-8 mt-10 ml-[180px]">
+           <div className="grid grid-cols-1 md:grid-cols-2  gap-6 mt-8 mx-4 md:mx-8">
               
                 <div className="w-fit mx-auto text-left space-y-5 flex flex-col " >
                   <span className="text-2xl font-bold m-0 md:text-[32px] font-cormorant text-[#1E2B3B] max-w-md lg:max-w-lg">Meyer Irmgard</span>

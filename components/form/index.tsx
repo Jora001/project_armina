@@ -18,17 +18,17 @@ const Form = () => {
 
   return (
     <div className="h-[100vh] w-[100%] bg-[#EFEBE8] flex justify-center items-center">
-      <div className="w-[1219px] bg-white mt-[10px] ml-20 p-10 rounded-lg shadow-lg">
+      <div className="w-[1219px] bg-white mt-[10px]  p-10 rounded-lg shadow-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {/* Left Side: Contact Information */}
           <div>
-            <p className="md:text-[50px] font-cormorant font-bold leading-tight">
+            <span className="md:text-[50px]  font-cormorant font-bold leading-tight">
               Let's talk <br />
               on something{" "}
               <span className="text-[#C29E76]">great</span>
               <br />
               together
-            </p>
+            </span>
             <div className="flex items-center mt-6">
               <Image
                 src="/assets/images/letter_icon.svg"
@@ -36,9 +36,9 @@ const Form = () => {
                 width={30}
                 height={23}
               />
-              <p className="ml-4 md:text-[24px] font-Karla">
+              <span className="ml-4 md:text-[24px] font-Karla">
                 andreaDesign@gmail.com
-              </p>
+              </span>
             </div>
             <div className="flex items-center mt-6">
               <Image
@@ -47,9 +47,9 @@ const Form = () => {
                 width={30}
                 height={30}
               />
-              <p className="ml-4 md:text-[24px] font-Karla">
+              <span className="ml-4 md:text-[24px] font-Karla">
                 +34 123 456 789
-              </p>
+              </span>
             </div>
             <div className="flex items-center mt-6">
               <Image
@@ -58,9 +58,9 @@ const Form = () => {
                 width={30}
                 height={38}
               />
-              <p className="ml-4 md:text-[24px] font-Karla">
+              <span className="ml-4 md:text-[24px] font-Karla">
                 123 Street 487 House
-              </p>
+              </span>
             </div>
           </div>
 
