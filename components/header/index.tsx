@@ -24,10 +24,10 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={my_font.className + " sticky top-0 z-10"}>
+    <header className={my_font.className + " sticky top-0 z-20"}>
       <nav
         ref={navRef}
-        className="flex items-center gap-7 justify-center fixed left-0 right-0 top-0 bg-white text-black pt-3 px-[150px] shadow-md"
+        className="flex items-center gap-7 justify-center fixed left-0 right-0 top-0 bg-white text-black pt-3 px-[150px] shadow-md md:px-6"
       >
         {/* Mobile Menu Button */}
         <button
@@ -41,15 +41,15 @@ export default function Header() {
         {isOpen && (
           <ul className="md:hidden flex flex-col items-center gap-4 absolute top-12 left-0 w-full bg-white shadow-md py-4">
             {NAVIGATION.map((nav) => (
-             <li key={nav.href} className="py-2">
-             <NavItem href={nav.href} label={nav.label} submenu={nav.submenu} />
-           </li>
+              <li key={nav.href} className="py-2">
+                <NavItem href={nav.href} label={nav.label} submenu={nav.submenu} />
+              </li>
             ))}
           </ul>
         )}
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-7">
+        <div className="hidden md:flex items-center gap-7 max-w-[965px]:hidden">
           {NAVIGATION.slice(0, 1).map((nav) => (
             <NavItem href={nav.href} label={nav.label} key={nav.href} />
           ))}

@@ -14,7 +14,7 @@ const my_font2 = Karla({
   subsets: ["latin"],
 });
 
-const Schuller = () => {
+const Facher = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [videoSrc, setVideoSrc] = useState("");
 
@@ -43,10 +43,9 @@ const Schuller = () => {
           className={`${my_font.className} absolute top-1/2 left-[5%] sm:left-[7%] md:left-[10%] transform -translate-y-1/2 max-w-[90%] lg:max-w-[50%]`}
         >
           <span className="text-[#C29E76] text-[4vw] sm:text-[3vw] md:text-[2vw] lg:text-[28px] leading-tight block">
-            Schule für Musik & Kunst
-          </span>
+          Schule für Musik & Kunst          </span>
           <span className="font-extrabold text-[#ffffff] text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[50px] leading-tight block">
-            SCHÜLLER
+          GESANG
           </span>
         </div>
       </div>
@@ -128,4 +127,4 @@ const Schuller = () => {
   );
 };
 
-export default Schuller;
+export default Facher;
