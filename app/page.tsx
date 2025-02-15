@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Pagination, Autoplay } from "swiper/modules";
 import Form from "@/components/form";
-import { Footer } from "@/components";
+// import { Footer } from "@/components";
 // import { useState from 'react';
 const slides = [
   {
@@ -69,14 +69,15 @@ export default function Home() {
   modules={[Pagination, Autoplay]}
   autoplay={{ delay: 2000, disableOnInteraction: false }}
   loop
-  speed={1500}
+  allowTouchMove={false} // ❗ Արգելում է Swiper-ի ձեռքով փոփոխումը
+        speed={1500}
   className="mySwiper w-full  h-[100vh]"
 >
   {slides.map((slide) => (
     <SwiperSlide
       key={slide.id}
       className="flex justify-center items-center bg-cover bg-center "
-      style={{ backgroundImage: `url(${slide.image})`,  marginTop: "25px" }}
+      style={{ backgroundImage: `url(${slide.image})`,  marginTop: "30px" }}
     >
       <div className="h-screen mt-[1vh] bg-cover bg-center relative">
         <div
@@ -160,6 +161,7 @@ export default function Home() {
               alt="square"
               width={265}
               height={327}
+              
               className="hidden md:block absolute top-[50%] right-[135px] w-[150px] md:w-[200px] lg:w-[265px] z-[-0]"
             />
 
@@ -200,7 +202,7 @@ export default function Home() {
         </div>
 
         {/* Statistics Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20 ml-20 w-full max-w-6xl">
+        <div className="grid  md:grid-cols-3  mt-20 w-full ml-15 max-w-8xl">
           {stats.map((stat, index) => (
             <div
               key={index}
@@ -379,9 +381,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-        <div className="mt-[83%]">
-        <Footer/>
-      </div>
+      {/*  <div className="flex flex-col min-h-screen">
+  
+  <Footer />
+</div> */}
+
     </div>
   );
 }

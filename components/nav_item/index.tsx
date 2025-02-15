@@ -52,12 +52,12 @@ function NavItem({ label, href, submenu }: INavItemProps) {
               key={item.href}
               className="relative group"
               onMouseEnter={() => {
-                if (item.label === "FÄCHER") {
+                if (item.label === "GESANG") {
                   setNestedOpen(true);
                 }
               }}
               onMouseLeave={() => {
-                if (item.label === "FÄCHER") {
+                if (item.label === "GESANG") {
                   setNestedOpen(false);
                 }
               }}
@@ -68,7 +68,7 @@ function NavItem({ label, href, submenu }: INavItemProps) {
                 </p>
               </Link>
 
-              {/* Nested submenu (FÄCHER) */}
+              {/* Nested submenu (GESANG) */}
               {item.submenu && nestedOpen && (
                 <div className="absolute left-full top-0 w-56 bg-white shadow-lg border rounded-md z-20 transition-opacity duration-200">
                   {item.submenu.map((subItem) => (
