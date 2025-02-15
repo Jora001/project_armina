@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import gsap from "gsap";
 import { NAVIGATION } from "@/constants";
 import NavItem from "../nav_item";
@@ -14,6 +15,7 @@ const my_font = Cormorant_Garamond({ weight: "400", subsets: ["latin"] });
 export default function Header() {
   const navRef = useRef<HTMLElement>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname(); // <<<<<<<<<<
 
   useEffect(() => {
     gsap.fromTo(
@@ -23,13 +25,19 @@ export default function Header() {
     );
   }, []);
 
+  // Close menu on route change
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]); // <<<<<<<<<<
+
   return (
-    <header className={my_font.className + " sticky top-0 z-20"}>
+    <header
+      className={my_font.className + " sticky top-0 z-20 w-[1440px] h-[50px]"}
+    >
       <nav
         ref={navRef}
-        className="flex items-center gap-7 justify-center fixed left-0 right-0 top-0 bg-white text-black pt-3 px-[150px] shadow-md md:px-6"
+        className="flex items-center gap-7 justify-center fixed left-0 right-0 top-0 bg-white text-black  px-[150px] shadow-md md:px-6"
       >
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden absolute left-4 top-4"
           onClick={() => setIsOpen(!isOpen)}
@@ -37,7 +45,6 @@ export default function Header() {
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
-        {/* Mobile Menu */}
         {isOpen && (
           <ul className="md:hidden flex flex-col items-center gap-4 absolute top-12 left-0 w-full bg-white shadow-md py-4">
             {NAVIGATION.map((nav) => (
@@ -48,7 +55,6 @@ export default function Header() {
           </ul>
         )}
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-7 max-w-[965px]:hidden">
           {NAVIGATION.slice(0, 1).map((nav) => (
             <NavItem href={nav.href} label={nav.label} key={nav.href} />
