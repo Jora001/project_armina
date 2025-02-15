@@ -177,7 +177,7 @@ export default function Home() {
 
           {/* Text Section */}
           <div className="text-center md:text-left">
-            <h1 className="text-[32px] md:text-[50px] lg:text-[80px] text-[#1E2B3B] font-cormorant font-medium whitespace-nowrap">
+            <h1 className="text-[32px] md:text-[50px] lg:text-[60px] text-[#1E2B3B] font-cormorant font-medium whitespace-nowrap">
               Exploring The Beauty <br /> Of Adornments
             </h1>
 
