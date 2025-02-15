@@ -77,8 +77,8 @@ export default function Home() {
     <SwiperSlide
       key={slide.id}
       className="flex justify-center items-center bg-cover bg-center "
-      style={{ backgroundImage: `url(${slide.image})`,  marginTop: "30px" }}
-    >
+      style={{ backgroundImage: `url(${slide.image})`, marginTop: "30px", backgroundPosition: "center bottom" }}
+      >
       <div className="h-screen mt-[1vh] bg-cover bg-center relative">
         <div
           className="h-50 absolute inset-0 bg-opacity-40"
