@@ -52,12 +52,12 @@ function NavItem({ label, href, submenu }: INavItemProps) {
               key={item.href}
               className="relative group"
               onMouseEnter={() => {
-                if (item.label === "GESANG") {
+                if (item.label === "Fächer") {
                   setNestedOpen(true);
                 }
               }}
               onMouseLeave={() => {
-                if (item.label === "GESANG") {
+                if (item.label === "Fächer") {
                   setNestedOpen(false);
                 }
               }}

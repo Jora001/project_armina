@@ -32,7 +32,7 @@ export default function Header() {
 
   return (
     <header
-      className={my_font.className + " sticky top-0 z-20 w-[1440px] h-[50px]"}
+      className={my_font.className + " sticky top-0 z-20 w-[1440px] h-[80px]"}
     >
       <nav
         ref={navRef}
