@@ -30,7 +30,7 @@ export const NAVIGATION = [
     href: "",
     submenu: [
       { label: "Vita", href: "/vita" },
-      { label: "MEINE VIDEOS", href: "/menvideos" },
+      { label: "Menie Videos", href: "/menvideos" },
       { label: "Bilder", href: "/bilder" },
     ],
   },
