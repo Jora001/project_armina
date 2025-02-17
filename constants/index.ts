@@ -10,7 +10,7 @@ export const NAVIGATION = [
     submenu: [
       { label: "Konzept", href: "/konzept" },
       {
-        label: "GESANG",
+        label: "FÄCHER",
         href: "/gesang",
         submenu: [
           { label: "Stimmbildung", href: "/stimmbildung" },
