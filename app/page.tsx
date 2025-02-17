@@ -22,7 +22,7 @@ const slides = [
     description: `Ziel der Schule für Musik und Kunst Armina Aristak ist es, die Schüler auf ein hohes <br /> künstlerisches Niveau zu bringen.
     Sie bietet Gesangs-, Instrumental- und <br /> Schauspiel-Unterricht an.
     Kinder und Jugendliche, Erwachsene und Senioren <br /> singen, spielen und schauspielern.`,
-    image: "/assets/images/image1.svg",
+    image: "/assets/images/Group73.svg",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const slides = [
     description: `Ziel der Schule für Musik und Kunst Armina Aristak ist es, die Schüler auf ein hohes <br /> künstlerisches Niveau zu bringen.
     Sie bietet Gesangs-, Instrumental- und <br /> Schauspiel-Unterricht an.
     Kinder und Jugendliche, Erwachsene und Senioren <br /> singen, spielen und schauspielern.`,
-    image: "/assets/images/image1.svg",
+    image: "/assets/images/Group72.svg",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const slides = [
     description: `Ziel der Schule für Musik und Kunst Armina Aristak ist es, die Schüler auf ein hohes <br /> künstlerisches Niveau zu bringen.
     Sie bietet Gesangs-, Instrumental- und <br /> Schauspiel-Unterricht an.
     Kinder und Jugendliche, Erwachsene und Senioren <br /> singen, spielen und schauspielern.`,
-    image: "/assets/images/image1.svg",
+    image: "/assets/images/Group71.svg",
   },
 ];
 const stats = [

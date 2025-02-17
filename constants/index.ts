@@ -5,7 +5,7 @@ export const NAVIGATION = [
     href: "/",
   },
   {
-    label: "Schule für Musik & Kunst",
+    label: "Schule und Musik & Kunst",
     href: "/schule",
     submenu: [
       { label: "Konzept", href: "/konzept" },
@@ -18,7 +18,7 @@ export const NAVIGATION = [
           { label: "Instrumental Unterricht", href: "/instrumental" },
         ],
       },
-      { label: "Schuller", href: "/schuller" },
+      { label: "Schüler", href: "/schuller" },
     ],
   },
   {
