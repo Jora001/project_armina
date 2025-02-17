@@ -86,47 +86,53 @@ export default function Home() {
   loop
   allowTouchMove={true} 
   speed={1500}
-  className="mySwiper w-full min-h-[120vh]"
+  className="mySwiper w-full h-screen"
 >
   {slides.map((slide) => (
     <SwiperSlide
       key={slide.id}
-      className="flex justify-center items-center bg-black"
+      className="relative w-full h-screen flex justify-center items-center bg-black"
     >
-      <div className="relative w-full min-h-[100vh] flex justify-center items-center">
-        <img
-          src={slide.image}
-          alt={slide.title}
-          className="w-full h-full object-contain"
-        />
-        <div className="absolute inset-0 flex flex-col justify-end items-center text-center sm:text-left p-40 pb-18">
-          <div className="w-[90%] sm:w-[80%] mx-auto">
-            <p className="font-cormorant text-[22px] sm:text-[28px] text-[#C29E76] font-bold">
-              {slide.title}
+      {/* Նկար */}
+      <img
+        src={slide.image}
+        alt={slide.title}
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+      {/* Թափանցիկ շերտ */}
+      <div className="absolute inset-0 bg-black/40"></div>
+
+      {/* Տեքստային բլոկ */}
+      <div className="absolute bottom-16 sm:bottom-20 md:bottom-24 lg:bottom-28 w-full text-center sm:text-left px-4 sm:px-10 md:px-20 lg:px-40">
+        <div className="w-[95%] sm:w-[85%] lg:w-[80%] mx-auto">
+          <p className="font-cormorant text-[20px] sm:text-[24px] lg:text-[28px] text-[#C29E76] font-bold leading-tight">
+            {slide.title}
+          </p>
+          <p className="text-[28px] sm:text-[40px] md:text-[50px] lg:text-[60px] text-white font-cormorant font-bold mb-[-45px]">
+            {slide.subtitle}
+          </p>
+          <p className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[10px] text-[#FFFFFF] font-thin font-Karla">
+            {slide.description.split("<br />").map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
+          </p>
+          <div className="flex justify-center sm:justify-start items-center mt-10">
+            <p className="font-cormorant text-[15px] sm:text-[24px] lg:text-[28px] text-[#C29E76] font-bold cursor-pointer">
+              Wolfgang Amadeus Mozart
             </p>
-            <p className="text-[36px] sm:text-[50px] md:text-[60px] text-white font-cormorant font-bold">
-              {slide.subtitle}
-            </p>
-            <p className="text-[16px] sm:text-[18px] md:text-[20px] text-[#FFFFFF] font-thin font-Karla">
-              {slide.description.split("<br />").map((line, index) => (
-                <React.Fragment key={index}>
-                  {line}
-                  <br />
-                </React.Fragment>
-              ))}
-            </p>
-            <div className="flex justify-center sm:justify-start items-center mt-4">
-              <p className="font-cormorant text-[22px] sm:text-[28px] text-[#C29E76] font-bold cursor-pointer">
-                Wolfgang Amadeus Mozart
-              </p>
-            </div>
           </div>
         </div>
       </div>
     </SwiperSlide>
   ))}
-  <div className="swiper-pagination absolute bottom-5"></div>
+  <div className="swiper-pagination absolute bottom-2 sm:bottom-5"></div>
 </Swiper>
+
+
 
 
 
