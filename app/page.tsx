@@ -17,30 +17,46 @@ import Form from "@/components/form";
 const slides = [
   {
     id: 1,
-    title: "Schul",
-    subtitle: "Mezzosopran/Gesangspädagogin",
-    description: `Ziel der Schule für Musik und Kunst Armina Aristak ist es, die Schüler auf ein hohes <br /> künstlerisches Niveau zu bringen.
-    Sie bietet Gesangs-, Instrumental- und <br /> Schauspiel-Unterricht an.
-    Kinder und Jugendliche, Erwachsene und Senioren <br /> singen, spielen und schauspielern.`,
-    image: "/assets/images/Group73.svg",
+    title: "",
+    subtitle: "Ohne Musik wär‘ alles nichts.",
+    description: "",
+    image: "/assets/images/24.svg",
   },
   {
     id: 2,
-    title: "Schul",
-    subtitle: "Mezzosopran/Gesangspädagogin",
-    description: `Ziel der Schule für Musik und Kunst Armina Aristak ist es, die Schüler auf ein hohes <br /> künstlerisches Niveau zu bringen.
-    Sie bietet Gesangs-, Instrumental- und <br /> Schauspiel-Unterricht an.
-    Kinder und Jugendliche, Erwachsene und Senioren <br /> singen, spielen und schauspielern.`,
-    image: "/assets/images/Group72.svg",
+    subtitle: "Ohne Musik wär‘ alles nichts.",
+    description: ``,
+    image: "/assets/images/Group77.svg",
   },
   {
     id: 3,
-    title: "Schul",
-    subtitle: "Mezzosopran/Gesangspädagogin",
-    description: `Ziel der Schule für Musik und Kunst Armina Aristak ist es, die Schüler auf ein hohes <br /> künstlerisches Niveau zu bringen.
-    Sie bietet Gesangs-, Instrumental- und <br /> Schauspiel-Unterricht an.
-    Kinder und Jugendliche, Erwachsene und Senioren <br /> singen, spielen und schauspielern.`,
-    image: "/assets/images/Group71.svg",
+    subtitle: "Ohne Musik wär‘ alles nichts.",
+    description: ``,
+    image: "/assets/images/31.svg",
+  },
+  {
+    id: 4,
+    subtitle: "Ohne Musik wär‘ alles nichts.",
+    description: ``,
+    image: "/assets/images/Group79.svg",
+  },
+  {
+    id: 5,
+    subtitle: "Ohne Musik wär‘ alles nichts.",
+    description: ``,
+    image: "/assets/images/Group72.svg",
+  },
+  {
+    id: 6,
+    subtitle: "Ohne Musik wär‘ alles nichts.",
+    description: ``,
+    image: "/assets/images/Group81.svg",
+  },
+  {
+    id: 7,
+    subtitle: "Ohne Musik wär‘ alles nichts.",
+    description: ``,
+    image: "/assets/images/Group82.svg",
   },
 ];
 const stats = [
@@ -62,26 +78,25 @@ const stats = [
 ];
 export default function Home() {
   return (
-<div className="w-screen h-screen " >
+<div className="w-screen h-500 " >
 <Swiper
-  direction="vertical"
   pagination={{ clickable: true, el: ".swiper-pagination" }}
   modules={[Pagination, Autoplay]}
   autoplay={{ delay: 2000, disableOnInteraction: false }}
   loop
-  allowTouchMove={false} // ❗ Արգելում է Swiper-ի ձեռքով փոփոխումը
-        speed={1500}
-  className="mySwiper w-full  h-[100vh]"
+  allowTouchMove={true} 
+  speed={1500}
+  className="mySwiper w-full h-[100vh]"
 >
   {slides.map((slide) => (
     <SwiperSlide
       key={slide.id}
-      className="flex justify-center items-center bg-cover bg-center "
-      style={{ backgroundImage: `url(${slide.image})`, marginTop: "30px", backgroundPosition: "center bottom" }}
-      >
-      <div className="h-screen mt-[1vh] bg-cover bg-center relative">
+      className="flex justify-center items-center bg-cover bg-center"
+      style={{ backgroundImage: `url(${slide.image})`, backgroundPosition: "center bottom" }}
+    >
+      <div className="h-screen bg-cover bg-center relative">
         <div
-          className="h-50 absolute inset-0 bg-opacity-40"
+          className="h-full absolute inset-0 bg-opacity-40"
           style={{ backgroundColor: "rgba(42, 46, 57, 0.51)" }}
         >
           <div className="w-[90%] sm:w-[80%] mx-auto flex flex-col h-full justify-center text-center sm:text-left">
@@ -91,7 +106,6 @@ export default function Home() {
             <p className="text-[36px] sm:text-[50px] md:text-[60px] text-white font-cormorant font-bold">
               {slide.subtitle}
             </p>
-            {/* ✅ Ահա լուծումը */}
             <p className="text-[16px] sm:text-[18px] md:text-[20px] text-[#FFFFFF] font-thin font-Karla">
               {slide.description.split("<br />").map((line, index) => (
                 <React.Fragment key={index}>
@@ -100,57 +114,20 @@ export default function Home() {
                 </React.Fragment>
               ))}
             </p>
-            <div className="flex justify-center sm:justify-start items-center mt-6">
+            <div className="flex justify-center sm:justify-start items-center mt-4">
               <p className="font-cormorant text-[22px] sm:text-[28px] text-[#C29E76] font-bold cursor-pointer">
-                Lesen Sie Meer
-              </p>
-              <Image
-                src="/assets/images/vector.svg"
-                alt="vectorcursor"
-                width={16}
-                height={16}
-                className="cursor-pointer mx-3.5"
-              />
+              Wolfgang Amadeus Mozart              </p>
             </div>
           </div>
         </div>
       </div>
     </SwiperSlide>
   ))}
-  <div className="swiper-pagination absolute right-5 sm:right-10"></div>
+  <div className="swiper-pagination absolute bottom-5"></div>
 </Swiper>
 
-      <div>
-        <nav className="h-auto md:h-[137px] flex flex-col md:flex-row mt-2" >
-          {/* Left Section */}
-          <div className="w-full md:w-[27%] bg-[#FFFFFF] flex items-center justify-center p-4 md:p-0">
-            <p className="font-Karla text-[18px] md:text-[20px] text-[#1E2B3B] font-thin text-center md:text-left">
-            Wolfgang <br /> Amadeus Mozart            </p>
-          </div>
 
-          {/* Middle Section */}
-          <div className="w-full md:w-[55%] bg-[#1E2B3B] flex items-center justify-center p-4 md:p-0">
-            <p className="font-Karla text-[#FFFFFF] text-[16px] md:text-[20px] font-thin text-center md:text-left">
-            Ohne Musik wär‘ alles nichts. <br />
-            Die Musik steckt nicht in den Noten, sondern in der Stille dazwischen.
-            </p>
-          </div>
-
-          {/* Right Section */}
-          <div className="w-full md:w-[310px] bg-[#C29E76] flex items-center justify-center p-4 md:p-0">
-            <p className="font-cormorant text-[22px] md:text-[28px] text-[#1E2B3B] font-bold cursor-pointer">
-              Buk Nov
-            </p>
-            <Image
-              src="/assets/images/vector2.svg"
-              alt="vector2"
-              width={16}
-              height={16}
-              className="cursor-pointer mx-3 md:mx-7"
-            />
-          </div>
-        </nav>
-      </div>
+    
       <div className="min-h-screen bg-[#EFEBE8] flex flex-col items-right px-6 md:px-12 lg:px-20 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 max-w-6xl w-full">
           {/* Image Section */}

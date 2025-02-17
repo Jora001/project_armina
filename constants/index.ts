@@ -10,8 +10,8 @@ export const NAVIGATION = [
     submenu: [
       { label: "Konzept", href: "/konzept" },
       {
-        label: "FÄCHER",
-        href: "/gesang",
+        label: "Fächer",
+        href: "",
         submenu: [
           { label: "Stimmbildung", href: "/stimmbildung" },
           { label: "Schauspiel", href: "/schauspiel" },
@@ -27,7 +27,7 @@ export const NAVIGATION = [
   },
   {
     label: "Armina Aristak",
-    href: "/armina",
+    href: "",
     submenu: [
       { label: "Vita", href: "/vita" },
       { label: "MEINE VIDEOS", href: "/menvideos" },
