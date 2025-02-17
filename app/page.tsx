@@ -20,43 +20,43 @@ const slides = [
     title: "",
     subtitle: "Ohne Musik wär‘ alles nichts.",
     description: "",
-    image: "/assets/images/24.svg",
+    image: "/assets/images/Group76.png",
   },
   {
     id: 2,
     subtitle: "Ohne Musik wär‘ alles nichts.",
     description: ``,
-    image: "/assets/images/Group77.svg",
+    image: "/assets/images/Group77(2).png",
   },
   {
     id: 3,
     subtitle: "Ohne Musik wär‘ alles nichts.",
     description: ``,
-    image: "/assets/images/31.svg",
+    image: "/assets/images/Group78.png",
   },
   {
     id: 4,
     subtitle: "Ohne Musik wär‘ alles nichts.",
     description: ``,
-    image: "/assets/images/Group79.svg",
+    image: "/assets/images/Group79.png",
   },
   {
     id: 5,
     subtitle: "Ohne Musik wär‘ alles nichts.",
     description: ``,
-    image: "/assets/images/Group72.svg",
+    image: "/assets/images/Group80(1).png",
   },
   {
     id: 6,
     subtitle: "Ohne Musik wär‘ alles nichts.",
     description: ``,
-    image: "/assets/images/Group81.svg",
+    image: "/assets/images/Group81.png",
   },
   {
     id: 7,
     subtitle: "Ohne Musik wär‘ alles nichts.",
     description: ``,
-    image: "/assets/images/Group82.svg",
+    image: "/assets/images/Group82.png",
   },
 ];
 const stats = [
@@ -86,20 +86,21 @@ export default function Home() {
   loop
   allowTouchMove={true} 
   speed={1500}
-  className="mySwiper w-full h-[100vh]"
+  className="mySwiper w-full min-h-[120vh]"
 >
   {slides.map((slide) => (
     <SwiperSlide
       key={slide.id}
-      className="flex justify-center items-center bg-cover bg-center"
-      style={{ backgroundImage: `url(${slide.image})`, backgroundPosition: "center bottom" }}
+      className="flex justify-center items-center bg-black"
     >
-      <div className="h-screen bg-cover bg-center relative">
-        <div
-          className="h-full absolute inset-0 bg-opacity-40"
-          style={{ backgroundColor: "rgba(42, 46, 57, 0.51)" }}
-        >
-          <div className="w-[90%] sm:w-[80%] mx-auto flex flex-col h-full justify-center text-center sm:text-left">
+      <div className="relative w-full min-h-[100vh] flex justify-center items-center">
+        <img
+          src={slide.image}
+          alt={slide.title}
+          className="w-full h-full object-contain"
+        />
+        <div className="absolute inset-0 flex flex-col justify-end items-center text-center sm:text-left p-40 pb-18">
+          <div className="w-[90%] sm:w-[80%] mx-auto">
             <p className="font-cormorant text-[22px] sm:text-[28px] text-[#C29E76] font-bold">
               {slide.title}
             </p>
@@ -116,7 +117,8 @@ export default function Home() {
             </p>
             <div className="flex justify-center sm:justify-start items-center mt-4">
               <p className="font-cormorant text-[22px] sm:text-[28px] text-[#C29E76] font-bold cursor-pointer">
-              Wolfgang Amadeus Mozart              </p>
+                Wolfgang Amadeus Mozart
+              </p>
             </div>
           </div>
         </div>
@@ -125,6 +127,8 @@ export default function Home() {
   ))}
   <div className="swiper-pagination absolute bottom-5"></div>
 </Swiper>
+
+
 
 
     
