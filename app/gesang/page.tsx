@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Cormorant_Garamond, Karla } from "next/font/google";
 import Image from "next/image";
 import Form from "@/components/form";
+// import { Footer } from "@/components";
 
 const my_font = Cormorant_Garamond({
   weight: "400",
@@ -123,6 +124,7 @@ const Facher = () => {
           </div>
         </div>
       )}
+      {/* <Footer/> */}
     </div>
   );
 };

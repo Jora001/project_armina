@@ -6,7 +6,7 @@ export const NAVIGATION = [
   },
   {
     label: "Schule und Musik & Kunst",
-    href: "/schule",
+    href: "",
     submenu: [
       { label: "Konzept", href: "/konzept" },
       {
@@ -41,5 +41,7 @@ export const NAVIGATION = [
   {
     label: "Kontakt",
     href: "/contact",
+    
   },
+  
 ];
