@@ -48,8 +48,11 @@ const Schauspiel: React.FC = () => {
           <span className="text-[#C29E76] block text-sm sm:text-lg md:text-xl">
             Schule für Musik & Kunst
           </span>
-          <span className="font-extrabold text-[#ffffff] block text-xl sm:text-3xl md:text-5xl">
-            INSTRUMENTAL- <br /> UNTERRICHT
+          <span
+            className="font-bold text-[#ffffff] block"
+            style={{ fontSize: "clamp(18px, 3.5vw, 40px)", whiteSpace: "nowrap" }}
+          >
+            SCHAUSPIEL
           </span>
         </motion.div>
       </div>

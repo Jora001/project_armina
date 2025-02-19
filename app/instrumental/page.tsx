@@ -43,7 +43,7 @@ const Instrumental = () => {
               className="font-extrabold text-[#ffffff] block"
               style={{ fontSize: "clamp(18px, 3.5vw, 40px)", whiteSpace: "nowrap" }}
             >
-              INSTRUMENTAL- <br /> UNTERRICHT
+              SCHAUSPIEL
             </span>
           </div>
         </div>
