@@ -81,7 +81,7 @@ const Slider = () => {
               transition={{ duration: 1.2 }}
             />
 
-            <div className="absolute inset-0 bg-black/30"></div>
+            <div className="absolute inset-0 bg-[blue]/30"></div>
 
             {/* 📌 Տեքստային բլոկ՝ ձախ կողմում */}
             <div className="absolute left-10 sm:left-16 md:left-24 lg:left-32 bottom-20 text-left text-white">
