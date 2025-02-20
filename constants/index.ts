@@ -16,10 +16,11 @@ export const NAVIGATION = [
           { label: "Stimmbildung", href: "/stimmbildung" },
           { label: "Schauspiel", href: "/schauspiel" },
           { label: "Instrumental Unterricht", href: "/instrumental" },
+          { label: "Musikunterricht für Kinder ab 4 Jahren", href: "/musice" },
+
         ],
       },
       { label: "Schüler", href: "/schuller" },
-      { label: "Musikunterricht für Kinder ab 4 Jahren", href: "/musice" },
 
     ],
   },

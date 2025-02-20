@@ -1,6 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-/* eslint-disable jsx-a11y/alt-text */
 
 "use client";
 import Image from "next/image";
@@ -17,12 +15,10 @@ import GallerySection from "@/components/Gallery";
 import { useRouter } from "next/navigation";
 import CookieConsent from "@/components/CookieConsent/CookieConsent";
 
-
 export default function Home() {
   const router = useRouter();
 
   return (
-    
     <main className="w-full">
       <CookieConsent />
       <Slider />
@@ -91,8 +87,7 @@ export default function Home() {
 
           {/* 8+ */}
           <div className="flex flex-col items-center">
-
-<h2 className="text-[60px] md:text-[80px] text-[#1B2733] font-['Cormorant_Garamond'] font-bold leading-none">
+            <h2 className="text-[60px] md:text-[80px] text-[#1B2733] font-['Cormorant_Garamond'] font-bold leading-none">
               8+
             </h2>
             <p className="text-[20px] md:text-[24px] leading-[26px] md:leading-[29.06px] text-[#1E2B3B] font-['Cormorant_Garamond']">
@@ -116,7 +111,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-
 
         {/* Statistics Section */}
         {/* <div className="grid  md:grid-cols-3  mt-20 w-full ml-15 max-w-8xl">
@@ -159,10 +153,10 @@ export default function Home() {
               alt="image4"
               width={80}
               height={84}
-              className="absolute left-4 sm:left-0 top-[-20px] md:top-0 md:left-[-50px]"
+              className="absolute left-4 sm:left-18 top-[-20px] md:top-0 md:left-[20px]"
             />
             {/* Title */}
-            <p className="text-[24px] sm:text-[28px] md:text-[33.36px] font-cormorant font-bold mt-[80px] md:mt-[90px]">
+            <p className="text-[24px]  md:left-[60px] sm:text-[28px] md:text-[33.36px] font-cormorant font-bold mt-[80px]  md:mt-[90px]">
               Armina Aristak
             </p>
             {/* Description */}
@@ -172,8 +166,7 @@ export default function Home() {
               ensemble. Prize winner 2016 and 2018 at the International Festival
               Young Opera Singer Schloss Rheinsberg, where she appeared in
               numerous concerts and opera performances.
-
-<br />
+              <br />
               <br />
               This was followed by performances with the Brandenburg Orchestra,
               participation in various opera performances with small solo games
@@ -181,9 +174,12 @@ export default function Home() {
               Stuttgart, Mittelbergheim.
             </p>
             {/* Read More */}
-            <p className="text-[#B7B7B7] font-Karla text-[16px] sm:text-[18px] cursor-pointer mt-6 underline">
-              Read more
-            </p>
+            <p
+  onClick={() => window.location.href = '/vita'}
+  className="text-[#B7B7B7] font-Karla text-[16px] sm:text-[18px] cursor-pointer mt-6 underline"
+>
+  Read more
+</p>
           </div>
         </div>
       </div>
@@ -193,82 +189,86 @@ export default function Home() {
           <GallerySection />
         </div>
 
-        <div className="h-[125vh] bg-[#EFEBE8] sm:mt-0 mt-[500px]">
-          <div className="bg-[#EFEBE8] min-h-[40vh] flex flex-col justify-center relative px-6 md:px-12">
-            {/* Title and Button in one row */}
-            <div className="flex items-center gap-4 md:ml-[100px] relative">
-              {/* Title */}
-              <Image
-                src="/assets/images/vertical_line.svg"
-                alt="vertical_line"
-                width={7}
-                height={45}
-                className="hidden md:block"
-              />
-              <h2 className="font-cormorant text-[36px] md:text-[60px] text-[#000000] font-medium text-center md:text-left">
-                Was Unsere Schüler Sagen
-              </h2>
 
-              {/* Button */}
-              <p
-                className="text-[#1E2B3B] text-[16px] md:text-[20px] font-cormorant font-bold border-2 border-[#1E2B3B] px-5 py-2 cursor-pointer hover:shadow-2xl transition-all duration-500 md:ml-80"
-                onClick={() => router.push("/Bewertungen")}
-              >
-                Alles sehen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div className="min-h-screen bg-[#EFEBE8] sm:mt-0 mt-[500px]">
+      <div className="bg-[#EFEBE8] min-h-[40vh] flex flex-col justify-center relative px-6 md:px-12">
+        {/* Title and Button in one row */}
+        <div className="flex flex-wrap items-center gap-4 md:ml-[100px] relative">
+          <Image
+            src="/assets/images/vertical_line.svg"
+            alt="vertical_line"
+            width={7}
+            height={45}
+            className="hidden md:block"
+          />
+          <h2 className="font-cormorant text-[36px] md:text-[60px] text-[#000000] font-medium text-center md:text-left">
+            Was Unsere Schüler Sagen
+          </h2>
+          <div className="ml-auto">
+            <p
+              className="text-[#1E2B3B] text-[16px] md:text-[20px] font-cormorant font-bold border-2 border-[#1E2B3B] px-5 py-2 cursor-pointer hover:shadow-2xl transition-all duration-500"
+              onClick={() => router.push('/Bewertungen')}
+            >
+              Alles sehen
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-[#EFEBE8] min-h-[60vh] flex justify-center px-4 sm:px-6">
+          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-8 py-8">
+            <div className="text-center sm:text-left  p-4 rounded-lg shadow-md">
+              <h2 className="text-[24px] md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
+                Petra Harres
+              </h2>
+              <p className="text-[14px] md:text-[16px] text-[#000000] font-karla font-thin">
+                I searched the Internet for a singing teacher and came across Armina - an absolute stroke of luck!!! She has a great, expressive and powerful voice and is a very sensitive, talented teacher. Using examples, it illustrates what can be improved. She always remains patient and calm. Every singing lesson with her is a win and on top of that, it's really fun.
               </p>
             </div>
 
-            <div className="bg-[#EFEBE8] min-h-[60vh] flex justify-center px-4 sm:px-6">
-              <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-6 md:px-12 py-8">
-                <div className="text-center sm:text-left">
-                  <h2 className="text-[24px] md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
-                    Petra Harres
-                  </h2>
-                  <p className="text-[14px] md:text-[16px] text-[#000000] font-karla font-thin">
-                    I searched the Internet for a singing teacher and came
-                    across Armina - an absolute stroke of luck!!! She has a
-                    great, expressive and powerful voice and is a very
-                    sensitive, talented teacher. Using examples, it illustrates
-                    what can be improved. She always remains patient and calm.
-                    Every singing lesson with her is a win and on top of that,
-                    it's really fun.
-                  </p>
-                </div>
-                <div className="text-center sm:text-left">
-                  <h2 className="text-[24px] md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
-                    Meyer Irmgard
-                  </h2>
-                  <p className="text-[14px] md:text-[16px] text-[#000000] font-karla font-thin">
-                    My daughter gave me singing lessons at Armina's. Armina has
-                    a great voice, works with great joy, and transmits this joy.
-                    Sensitive and competent, she teaches singing techniques and
-                    practices them with me, so that after a short time, a
-                    success could be heard. It was a lot of fun!
-                  </p>
-                </div>
-                <div className="text-center sm:text-left">
-                  <h2 className="text-[24px] md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
-
-Meyer Irmgard
-                  </h2>
-                  <p className="text-[14px] md:text-[16px] text-[#000000] font-karla font-thin">
-                    My daughter gave me singing lessons at Armina's. Armina has
-                    a great voice, works with great joy, and transmits this joy.
-                    Sensitive and competent, she teaches singing techniques and
-                    practices them with me, so that after a short time, a
-                    success could be heard. It was a lot of fun!
-                  </p>
-                </div>
-              </div>
+            <div className="text-center sm:text-left  p-4 rounded-lg shadow-md">
+              <h2 className="text-[24px] md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
+                Meyer Irmgard
+              </h2>
+              <p className="text-[14px] md:text-[16px] text-[#000000] font-karla font-thin">
+                My daughter gave me singing lessons at Armina's. Armina has a great voice, works with great joy, and transmits this joy. Sensitive and competent, she teaches singing techniques and practices them with me, so that after a short time, a success could be heard. It was a lot of fun!
+              </p>
             </div>
-          </div>
 
-          <div className="relative">
-            <div className="absolute top-20 left-0 right-0 flex justify-center">
-              <Form />
+            <div className="text-center sm:text-left  p-4 rounded-lg shadow-md">
+              <h2 className="text-[24px] md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
+                Alex Schmidt
+              </h2>
+              <p className="text-[14px] md:text-[16px] text-[#000000] font-karla font-thin">
+                Armina's lessons have greatly improved my singing confidence. Her professional approach and encouraging attitude made me enjoy every session. I highly recommend her!
+              </p>
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="relative">
+        <div className="absolute top-20 left-0 right-0 flex justify-center">
+          <Form />
+        </div>
+      </div>
+    </div>
       </div>
 
       {/*  <div className="flex flex-col min-h-screen">
