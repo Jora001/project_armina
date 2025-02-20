@@ -99,7 +99,7 @@ const projecte: React.FC = () => {
               </h3>
               <p className="text-sm text-[#544f4a] font-semibold whitespace-pre-line">{person.desc}</p>
 
-              <Link href="/jetz">
+              <Link href="/detalis">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

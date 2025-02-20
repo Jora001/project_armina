@@ -92,7 +92,6 @@ export default function Home() {
           {/* 8+ */}
           <div className="flex flex-col items-center">
 
-Ar Yan, [2/20/2025 9:28 PM]
 <h2 className="text-[60px] md:text-[80px] text-[#1B2733] font-['Cormorant_Garamond'] font-bold leading-none">
               8+
             </h2>
@@ -174,7 +173,6 @@ Ar Yan, [2/20/2025 9:28 PM]
               Young Opera Singer Schloss Rheinsberg, where she appeared in
               numerous concerts and opera performances.
 
-Ar Yan, [2/20/2025 9:28 PM]
 <br />
               <br />
               This was followed by performances with the Brandenburg Orchestra,
@@ -251,7 +249,6 @@ Ar Yan, [2/20/2025 9:28 PM]
                 <div className="text-center sm:text-left">
                   <h2 className="text-[24px] md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
 
-Ar Yan, [2/20/2025 9:28 PM]
 Meyer Irmgard
                   </h2>
                   <p className="text-[14px] md:text-[16px] text-[#000000] font-karla font-thin">

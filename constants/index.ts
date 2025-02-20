@@ -19,6 +19,8 @@ export const NAVIGATION = [
         ],
       },
       { label: "Schüler", href: "/schuller" },
+      { label: "Musikunterricht für Kinder ab 4 Jahren", href: "/musice" },
+
     ],
   },
   {
