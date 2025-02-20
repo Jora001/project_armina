@@ -15,14 +15,17 @@ import GallerySection from "@/components/Gallery";
 // import { Footer } from "@/components";
 // import { useState from 'react';
 import { useRouter } from "next/navigation";
+import CookieConsent from "@/components/CookieConsent/CookieConsent";
+
 
 export default function Home() {
   const router = useRouter();
 
   return (
+    
     <main className="w-full">
+      <CookieConsent />
       <Slider />
-
       <div className="min-h-screen bg-[#EFEBE8] flex flex-col items-right px-6 md:px-12 lg:px-20 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 max-w-6xl w-full">
           {/* Image Section */}
@@ -88,7 +91,9 @@ export default function Home() {
 
           {/* 8+ */}
           <div className="flex flex-col items-center">
-            <h2 className="text-[60px] md:text-[80px] text-[#1B2733] font-['Cormorant_Garamond'] font-bold leading-none">
+
+Ar Yan, [2/20/2025 9:28 PM]
+<h2 className="text-[60px] md:text-[80px] text-[#1B2733] font-['Cormorant_Garamond'] font-bold leading-none">
               8+
             </h2>
             <p className="text-[20px] md:text-[24px] leading-[26px] md:leading-[29.06px] text-[#1E2B3B] font-['Cormorant_Garamond']">
@@ -112,11 +117,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-
-
-
-
-
 
 
         {/* Statistics Section */}
@@ -173,7 +173,9 @@ export default function Home() {
               ensemble. Prize winner 2016 and 2018 at the International Festival
               Young Opera Singer Schloss Rheinsberg, where she appeared in
               numerous concerts and opera performances.
-              <br />
+
+Ar Yan, [2/20/2025 9:28 PM]
+<br />
               <br />
               This was followed by performances with the Brandenburg Orchestra,
               participation in various opera performances with small solo games
@@ -193,7 +195,7 @@ export default function Home() {
           <GallerySection />
         </div>
 
-        <div className="h-[125vh] bg-[#EFEBE8] sm:mt-0 mt-[600px]">
+        <div className="h-[125vh] bg-[#EFEBE8] sm:mt-0 mt-[500px]">
           <div className="bg-[#EFEBE8] min-h-[40vh] flex flex-col justify-center relative px-6 md:px-12">
             {/* Title and Button in one row */}
             <div className="flex items-center gap-4 md:ml-[100px] relative">
@@ -248,7 +250,9 @@ export default function Home() {
                 </div>
                 <div className="text-center sm:text-left">
                   <h2 className="text-[24px] md:text-[32px] font-bold text-[#1E2B3B] font-cormorant mb-2">
-                    Meyer Irmgard
+
+Ar Yan, [2/20/2025 9:28 PM]
+Meyer Irmgard
                   </h2>
                   <p className="text-[14px] md:text-[16px] text-[#000000] font-karla font-thin">
                     My daughter gave me singing lessons at Armina's. Armina has
@@ -263,7 +267,7 @@ export default function Home() {
           </div>
 
           <div className="relative">
-            <div className="absolute  left-0 right-0 flex justify-center">
+            <div className="absolute top-20 left-0 right-0 flex justify-center">
               <Form />
             </div>
           </div>
