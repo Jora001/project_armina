@@ -10,43 +10,43 @@ import "swiper/css/pagination";
 const slides = [
   {
     id: 1,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
+    subtitle: "Ohne Musik wär‘ alles nichts. Die Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
     description: "Music gives a soul to the universe.",
     image: "/assets/images/dasnam.png",
   },
   {
     id: 2,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
+    subtitle: "Ohne Musik wär‘ alles nichts. Die Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
     description: "Without music, life would be a mistake.",
     image: "/assets/images/ere.png",
   },
   {
     id: 3,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
+    subtitle: "Ohne Musik wär‘ alles nichts. Die Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
     description: "Music expresses that which cannot be said.",
     image: "/assets/images/cax.png",
   },
   {
     id: 4,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
+    subtitle: "Ohne Musik wär‘ alles nichts. Die Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
     description: "Music is the shorthand of emotion.",
     image: "/assets/images/ton.png",
   },
   {
     id: 5,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
+    subtitle: "Ohne Musik wär‘ alles nichts. Die Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
     description: "Music is the divine way to tell beautiful things.",
     image: "/assets/images/Group80(1).png",
   },
   {
     id: 6,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
+    subtitle: "Ohne Musik wär‘ alles nichts. Die Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
     description: "Music acts like a magic key.",
     image: "/assets/images/abc.png",
   },
   {
     id: 7,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
+    subtitle: "Ohne Musik wär‘ alles nichts. Die Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
     description: "Music is an outburst of the soul.",
     image: "/assets/images/aristak.png",
   },
@@ -81,7 +81,7 @@ const Slider = () => {
               transition={{ duration: 1.2 }}
             />
 
-            <div className="absolute inset-0 bg-[blue]/30"></div>
+            <div className="absolute inset-0 bg-[blue]/50"></div>
 
             {/* 📌 Տեքստային բլոկ՝ ձախ կողմում */}
             <div className="absolute left-10 sm:left-16 md:left-24 lg:left-32 bottom-20 text-left text-white">
