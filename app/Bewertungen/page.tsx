@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { Footer, Header } from '@/components';
 import React from 'react';
 import Image from 'next/image';
@@ -7,31 +6,27 @@ const Bewertungen = () => {
   const data = [
     {
       name: 'Meyer Irmgard',
-      text: `I searched the Internet for a singing teacher and came across Armina <br /> - an absolute  stroke of luck!!!
-      She has a great, expressive and powerful <br /> voice and is a very sensitive, talented  teacher.
-      Using examples, it illustrates <br /> what can be improved.
-      She always remains patient and calm. <br />
-      Every singing lesson with her is a win and on top of that it's really fun.`,
+      text: `I searched the Internet for a singing teacher and came across Armina – an absolute stroke of luck!!! She has a great, expressive and powerful voice and is a very sensitive, talented teacher. Using examples, she illustrates what can be improved. She always remains patient and calm. Every singing lesson with her is a win and on top of that it's really fun.`,
     },
     {
       name: 'Meyer Irmgard',
-      text: "I searched the Internet for a singing teacher and came across Armina <br /> - an absolute stroke of luck! She has a great, expressive and powerful voice and is a very sensitive, talented teacher. Using examples, she illustrates what can be improved. She always remains patient and calm. Every singing lesson with her is a win and on top of that it's really fun.",
-    },
-    {
-      name: 'Meyer Irmgard',
-      text: "My daughter gave me singing lessons at Armina's. Armina has a great voice, works with great joy and transmits this joy. Sensitive and competent she teaches singing techniques and practiced them with me, so that after a short time a success could be heard. It was a lot of fun!",
+      text: `My daughter gave me singing lessons at Armina's. Armina has a great voice, works with great joy and transmits this joy. Sensitive and competent she teaches singing techniques and practiced them with me, so that after a short time a success could be heard. It was a lot of fun!`,
     },
     {
       name: 'Petra Harres',
-      text: "I searched the Internet for a singing teacher and came across Armina <br /> - an absolute stroke of luck! She has a great, expressive and powerful voice and is a very sensitive, talented teacher. Using examples, she illustrates what can be improved. She always remains patient and calm. Every singing lesson with her is a win and on top of that it's really fun.",
+      text: `I searched the Internet for a singing teacher and came across Armina – an absolute stroke of luck! She has a great, expressive and powerful voice and is a very sensitive, talented teacher. Using examples, she illustrates what can be improved. She always remains patient and calm. Every singing lesson with her is a win and on top of that it's really fun.`,
     },
     {
       name: 'Petra Harres',
-      text: "I searched the Internet for a singing teacher and came across Armina - an absolute stroke of luck! She has a great, expressive and powerful voice and is a very sensitive, talented teacher. Using examples, she illustrates what can be improved. She always remains patient and calm. Every singing lesson with her is a win and on top of that it's really fun.",
+      text: `I searched the Internet for a singing teacher and came across Armina – an absolute stroke of luck! She has a great, expressive and powerful voice and is a very sensitive, talented teacher. Using examples, she illustrates what can be improved. She always remains patient and calm. Every singing lesson with her is a win and on top of that it's really fun.`,
     },
     {
       name: 'Petra Harres',
-      text: "I searched the Internet for a singing teacher and came across Armina - an absolute stroke of luck! She has a great, expressive and powerful voice and is a very sensitive, talented teacher. Using examples, she illustrates what can be improved. She always remains patient and calm. Every singing lesson with her is a win and on top of that it's really fun.",
+      text: `I searched the Internet for a singing teacher and came across Armina – an absolute stroke of luck! She has a great, expressive and powerful voice and is a very sensitive, talented teacher. Using examples, she illustrates what can be improved. She always remains patient and calm. Every singing lesson with her is a win and on top of that it's really fun.`,
+    },
+    {
+      name: 'Petra Harres',
+      text: `I searched the Internet for a singing teacher and came across Armina – an absolute stroke of luck! She has a great, expressive and powerful voice and is a very sensitive, talented teacher. Using examples, she illustrates what can be improved. She always remains patient and calm. Every singing lesson with her is a win and on top of that it's really fun.`,
     },
   ];
 
@@ -55,15 +50,14 @@ const Bewertungen = () => {
           </div>
 
           <div className='mt-12 grid grid-cols-1 md:grid-cols-2 gap-12'>
-            {data?.map((review, index) => (
+            {data.map((review, index) => (
               <div key={index} className='w-full text-left space-y-5'>
                 <span className='text-2xl font-bold md:text-[32px] font-cormorant text-[#1E2B3B] block'>
                   {review.name}
                 </span>
-                <span
-                  className='text-sm font-Karla md:text-[16px] text-[#000000] capitalize block'
-                  dangerouslySetInnerHTML={{ __html: review.text }}
-                ></span>
+                <p className='text-sm font-Karla md:text-[16px] text-[#000000] capitalize'>
+                  {review.text}
+                </p>
               </div>
             ))}
           </div>

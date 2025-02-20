@@ -40,13 +40,13 @@ const slides = [
   },
   {
     id: 6,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
+    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten,\n sondern in der Stille dazwischen.",
     description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/abc.png",
   },
   {
     id: 7,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
+    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten,\n sondern in der Stille dazwischen.",
     description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/aristak.png",
   },
@@ -81,13 +81,23 @@ const Slider = () => {
               transition={{ duration: 1.2 }}
             />
 
-            <div className="absolute inset-0"></div>
-
-            <div className="absolute left-10 sm:left-16 md:left-24 lg:left-32 bottom-32 text-left text-white">
-              <p className="text-[28px] sm:text-[40px] md:text-[50px] lg:text-[60px] font-cormorant font-bold text-[#ffffff] whitespace-pre-line">
+            <div className="absolute left-10 sm:left-16 md:left-24 lg:left-32 bottom-32 text-left">
+              <p
+                className="text-[28px] sm:text-[40px] md:text-[50px] lg:text-[60px] font-cormorant font-bold text-white whitespace-pre-line"
+                style={{
+                  WebkitTextStroke: "2px #1453C9",
+                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+                }}
+              >
                 {slide.subtitle}
               </p>
-              <p className="text-[16px] sm:text-[10px] md:text-[20px] lg:text-[22px] font-thin font-Karla text-[#1453C9]">
+              <p
+                className="text-[16px] sm:text-[10px] md:text-[20px] lg:text-[22px] font-thin font-Karla text-[#1453C9]"
+                style={{
+                  WebkitTextStroke: "1px #1453C9",
+                  textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)",
+                }}
+              >
                 {slide.description}
               </p>
             </div>
