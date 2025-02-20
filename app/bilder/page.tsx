@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Cormorant_Garamond } from 'next/font/google';
+import { Footer } from '@/components';
 
 // Specify a subset to prevent the Next.js build error
 const my_font = Cormorant_Garamond({
@@ -10,7 +11,7 @@ const my_font = Cormorant_Garamond({
 
 const Bilder = () => {
   return (
-    <div className="flex flex-col bg-maincolor mt-[100px]">
+    <div className="w-full min-h-screen bg-[#EFEBE8]">
       <div className="relative">
         <Image 
           src="/assets/images/schuller_background.svg" 
@@ -30,7 +31,7 @@ const Bilder = () => {
           width={407} 
           height={518} 
           alt="image" 
-          className="grayscale hover:grayscale-0 transition duration-500"
+          className="hover:grayscale-0 transition duration-500"
         />
         <div className="grid grid-cols-2 gap-2">
           <Image 
@@ -38,21 +39,21 @@ const Bilder = () => {
             width={407} 
             height={274} 
             alt="image" 
-            className="col-span-2 grayscale hover:grayscale-0 transition duration-300"
+            className="col-span-2  hover:grayscale-0 transition duration-300"
           />
           <Image 
             src="/assets/images/image (3).svg" 
             width={199} 
             height={234} 
             alt="image" 
-            className="grayscale hover:grayscale-0 transition duration-300"
+            className=" hover:grayscale-0 transition duration-300"
           />
           <Image 
             src="/assets/images/image (4).svg" 
             width={199} 
             height={234} 
             alt="image" 
-            className="grayscale hover:grayscale-0 transition duration-300"
+            className=" hover:grayscale-0 transition duration-300"
           />
         </div>
         <Image 
@@ -60,9 +61,10 @@ const Bilder = () => {
           width={415} 
           height={518} 
           alt="image" 
-          className="grayscale hover:grayscale-0 transition duration-300"
+          className=" hover:grayscale-0 transition duration-300"
         />
       </div>
+      <Footer/>
     </div>
   );
 }

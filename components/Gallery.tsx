@@ -17,35 +17,35 @@ const GallerySection = () => {
           alt="rectangle13"
           width={407}
           height={613}
-          className="grayscale transition-transform duration-500 hover:grayscale-0 hover:scale-110"
+          className=" transition-transform duration-500 hover:grayscale-0 hover:scale-110"
         />
         <Image
           src="/assets/images/rectangle14.svg"
           alt="rectangle14"
           width={407}
           height={325}
-          className="grayscale transition-transform duration-500 hover:grayscale-0 hover:scale-110"
+          className=" transition-transform duration-500 hover:grayscale-0 hover:scale-110"
         />
         <Image
           src="/assets/images/rectangle12.svg"
           alt="rectangle12"
           width={415}
           height={613}
-          className="grayscale transition-transform duration-500 hover:grayscale-0 hover:scale-110"
+          className=" transition-transform duration-500 hover:grayscale-0 hover:scale-110"
         />
         <Image
           src="/assets/images/rectangle15.svg"
           alt="rectangle15"
           width={199}
           height={277}
-          className="absolute md:mt-[336px] md:ml-[427px] grayscale transition-transform duration-500 hover:grayscale-0 hover:scale-110 hidden md:block"
+          className="absolute md:mt-[336px] md:ml-[427px]  transition-transform duration-500 hover:grayscale-0 hover:scale-110 hidden md:block"
         />
         <Image
           src="/assets/images/rectangle16.svg"
           alt="rectangle16"
           width={199}
           height={277}
-          className="absolute md:mt-[336px] md:ml-[635px] grayscale transition-transform duration-500 hover:grayscale-0 hover:scale-110 hidden md:block"
+          className="absolute md:mt-[336px] md:ml-[635px]  transition-transform duration-500 hover:grayscale-0 hover:scale-110 hidden md:block"
         />
       </div>
     </div>

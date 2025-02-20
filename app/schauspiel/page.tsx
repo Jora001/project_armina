@@ -11,8 +11,8 @@ const myFont = Karla({ weight: "700", subsets: ["latin"] });
 // Team member data
 const teamMembers = [
   { img: "/assets/images/image(9).png", name: "María Belén Arellano", desc: "Piano Lehrer", link: "/team/maria-belen" },
-  { img: "/assets/images/image(9).png", name: "María Belén Arellano", desc: "Piano Lehrer", link: "/team/maria-belen" },
-  { img: "/assets/images/image(9).png", name: "María Belén Arellano", desc: "Piano Lehrer", link: "/team/maria-belen" },
+  // { img: "/assets/images/image(9).png", name: "María Belén Arellano", desc: "Piano Lehrer", link: "/team/maria-belen" },
+  // { img: "/assets/images/image(9).png", name: "María Belén Arellano", desc: "Piano Lehrer", link: "/team/maria-belen" },
 ];
 
 const Schauspiel: React.FC = () => {

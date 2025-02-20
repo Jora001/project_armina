@@ -10,44 +10,44 @@ import "swiper/css/pagination";
 const slides = [
   {
     id: 1,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
-    description: "Music gives a soul to the universe.",
+    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten,\n sondern in der Stille dazwischen.",
+    description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/dasnam.png",
   },
   {
     id: 2,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
-    description: "Without music, life would be a mistake.",
+    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten,\n sondern in der Stille dazwischen.",
+    description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/ere.png",
   },
   {
     id: 3,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
-    description: "Music expresses that which cannot be said.",
+    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten,\n sondern in der Stille dazwischen.",
+    description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/cax.png",
   },
   {
     id: 4,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
-    description: "Music is the shorthand of emotion.",
+    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten,\n sondern in der Stille dazwischen.",
+    description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/ton.png",
   },
   {
     id: 5,
-    subtitle: "Ohne Musik wär‘ alles nichts.",
-    description: "Music is the divine way to tell beautiful things.",
+    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten,\n sondern in der Stille dazwischen.",
+    description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/Group80(1).png",
   },
   {
     id: 6,
     subtitle: "Ohne Musik wär‘ alles nichts.",
-    description: "Music acts like a magic key.",
+    description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/abc.png",
   },
   {
     id: 7,
     subtitle: "Ohne Musik wär‘ alles nichts.",
-    description: "Music is an outburst of the soul.",
+    description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/aristak.png",
   },
 ];
@@ -81,14 +81,13 @@ const Slider = () => {
               transition={{ duration: 1.2 }}
             />
 
-            <div className="absolute inset-0 bg-[blue]/30"></div>
+            <div className="absolute inset-0"></div>
 
-            {/* 📌 Տեքստային բլոկ՝ ձախ կողմում */}
-            <div className="absolute left-10 sm:left-16 md:left-24 lg:left-32 bottom-20 text-left text-white">
-              <p className="text-[28px] sm:text-[40px] md:text-[50px] lg:text-[60px] font-cormorant font-bold text-[#C29E76]">
+            <div className="absolute left-10 sm:left-16 md:left-24 lg:left-32 bottom-32 text-left text-white">
+              <p className="text-[28px] sm:text-[40px] md:text-[50px] lg:text-[60px] font-cormorant font-bold text-[#ffffff] whitespace-pre-line">
                 {slide.subtitle}
               </p>
-              <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] font-thin font-Karla">
+              <p className="text-[16px] sm:text-[10px] md:text-[20px] lg:text-[22px] font-thin font-Karla text-[#1453C9]">
                 {slide.description}
               </p>
             </div>
@@ -96,7 +95,6 @@ const Slider = () => {
         ))}
       </Swiper>
 
-      {/* 🔘 Թերթման կետերը ներքևում իրար կողքի */}
       <div className="swiper-pagination absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10"></div>
 
       <style jsx>{`

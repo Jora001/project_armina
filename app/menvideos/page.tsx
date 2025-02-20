@@ -5,9 +5,9 @@ import Form from '@/components/form'
 
 const menvideos = () => {
   return (
-    <div className=''>
+    <div className="w-full min-h-screen bg-[#EFEBE8]">
 
-      <div className='w-full min-h-screen bg-[#EFEBE8] md:mt-[100px]'>
+      {/* <div className='w-full min-h-screen bg-[#EFEBE8] md:mt-[100px]'> */}
       <div className='relative w-full h-[200px] md:h-[353px] md:mt-[5px] sm:mt-2 bg-[url(/assets/images/kontakt_image.svg)] bg-cover bg-center'>
         <div className='absolute inset-0 bg-[rgba(42,46,57,0.20)]'>
           <div className='container mx-auto px-4 sm:px-8 h-full flex flex-col justify-center md:ml-28'>
@@ -59,7 +59,7 @@ const menvideos = () => {
       </div>
     <Form /> 
   </div>
-</div>
+// </div>
   )
 }
 
