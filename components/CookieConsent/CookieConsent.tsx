@@ -33,7 +33,7 @@ const CookieConsent = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 50, scale: 0.9 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="fixed bottom-6 left-1/2 transform -translate-x-1/2 w-[90%] max-w-xl backdrop-blur-lg bg-white/80 border border-white/40 text-gray-900 text-base p-6 flex flex-col items-center rounded-2xl shadow-2xl z-50"
+            className="fixed bottom-6 left-1/3 transform -translate-x-1/2 w-[90%] max-w-xl backdrop-blur-lg bg-white/80 border border-white/40 text-gray-900 text-base p-6 flex flex-col items-center rounded-2xl shadow-2xl z-50"
           >
             {accepted ? (
               <motion.div

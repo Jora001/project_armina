@@ -30,7 +30,7 @@ const Schuller = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center mt-[100px] bg-maincolor">
+    <div className="flex flex-col justify-center bg-maincolor">
       {/* Background Image with Title */}
       <div className="relative w-full">
         <Image
@@ -131,5 +131,3 @@ const Schuller = () => {
   );
 };
 export default Schuller;
-
-
