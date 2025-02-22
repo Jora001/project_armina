@@ -86,7 +86,7 @@ const Slider = () => {
                 className="text-[28px] sm:text-[40px] md:text-[50px] lg:text-[60px] font-sans font-bold text-[#012347] whitespace-pre-line leading-[70px]"
                 style={{
                   WebkitTextStroke: "2px #1453C9",
-                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+                  textShadow: "4px 0px 0px rgba(20, 49, 81, 1)",
                 }}
               >
                 {slide.subtitle}
@@ -95,7 +95,7 @@ const Slider = () => {
                 className="text-[16px] sm:text-[10px] md:text-[20px] lg:text-[22px] font-sans text-[#143151]"
                 style={{
                   WebkitTextStroke: "1px #1453C9",
-                  textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)",
+                  textShadow: "4px 0px 0px rgba(20, 49, 81, 1)",
                 }}
               >
                 {slide.description}
