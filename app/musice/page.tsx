@@ -4,6 +4,7 @@ import { Cormorant_Garamond } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Footer } from "@/components";
 const my_font = Cormorant_Garamond({
   weight: "400",
   subsets: ["latin"],
@@ -24,10 +25,10 @@ const Musice = () => {
         <div
           className={`${my_font.className} absolute top-1/2 left-[5%] sm:left-[7%] md:left-[10%] transform -translate-y-1/2 max-w-[90%] lg:max-w-[50%]`}
         >
-          <span className="text-[#C29E76] text-[4vw] sm:text-[3vw] md:text-[2vw] lg:text-[28px] leading-tight block">
-            Schule für Musik & Kunst
+          <span className="text-[#C29E76] text-[5vw] sm:text-[4vw] md:text-[3vw] lg:text-[25px] leading-tight block">
+          Schule für Musik & Kunst
           </span>
-          <span className="font-extrabold text-[#ffffff] text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[50px] leading-tight block">
+          <span className="font-extrabold text-[#ffffff] text-[5vw] sm:text-[7vw] md:text-[5vw] lg:text-[40px] leading-tight block">
             MUSIKUNTERRICHT FÜR <br /> KINDER AB 4 JAHREN
           </span>
         </div>
@@ -172,6 +173,7 @@ const Musice = () => {
           </motion.button>
         </Link>
       </div>
+      <Footer/>
     </main>
   );
 };

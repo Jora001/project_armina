@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Cormorant_Garamond, Karla } from "next/font/google";
 import Image from "next/image";
 import Form from "@/components/form";
+import { Footer } from "@/components";
 // import { Footer } from "@/components";
 
 const my_font = Cormorant_Garamond({
@@ -30,7 +31,7 @@ const Schuller = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center bg-maincolor">
+    <main className="bg-maincolor min-h-screen w-full flex flex-col items-center">
       {/* Background Image with Title */}
       <div className="relative w-full">
         <Image
@@ -99,11 +100,11 @@ const Schuller = () => {
       </div>
 
       {/* Form Component */}
-      <div className="relative">
+      {/* <div className="relative">
         <div className="absolute left-0 right-0 flex justify-center">
           <Form />
         </div>
-      </div>
+      </div> */}
 
       {/* Video Modal */}
       {isModalOpen && (
@@ -125,9 +126,12 @@ const Schuller = () => {
           </div>
         </div>
       )}
-        {/* <Footer/> */}
-
-    </div>
+      <Form/>
+ <div className=' w-full'>
+        <Footer />
+      </div>
+      
+    </main>
   );
 };
 export default Schuller;

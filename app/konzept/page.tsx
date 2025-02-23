@@ -4,6 +4,7 @@ import { Cormorant_Garamond, Karla } from "next/font/google";
 import Image from "next/image";
 import Form from "@/components/form";
 import { Footer } from "@/components";
+import { motion } from "framer-motion";
 
 const my_font = Cormorant_Garamond({
   weight: "400",
@@ -23,44 +24,69 @@ const Konzept = () => {
   return (
     <main className="bg-maincolor min-h-screen w-full flex flex-col items-center">
       {/* Header Image Section */}
-      <div className="relative w-full">
+      <motion.div 
+        initial={{ opacity: 0 }} 
+        animate={{ opacity: 1 }} 
+        transition={{ duration: 1 }}
+        className="relative w-full"
+      >
         <Image
           src="/assets/images/schuller_background.svg"
           width={1540}
           height={353}
           alt="bg"
           className="w-full h-auto object-cover"
+          priority
         />
-        <div
+        <motion.div
           ref={titleRef}
-          className={`${my_font.className} absolute top-1/2 left-[5%] sm:left-[7%] md:left-[10%] transform -translate-y-1/2 max-w-[90%] lg:max-w-[50%]`}
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className={`${my_font.className} absolute top-1/2 left-4 sm:left-10 md:left-16 transform -translate-y-1/2 w-[90%] md:w-[60%] lg:w-[50%]`}
         >
-          <span className="text-[#C29E76] text-[5vw] sm:text-[4vw] md:text-[3vw] lg:text-[28px] leading-tight block">
+          <span className="text-[#C29E76] text-[5vw] sm:text-[4vw] md:text-[3vw] lg:text-[25px] leading-tight block">
             Schule für Musik & Kunst
           </span>
-          <span className="font-extrabold text-[#ffffff] text-[10vw] sm:text-[7vw] md:text-[5vw] lg:text-[60px] leading-tight block">
+          <span className="font-extrabold text-[#ffffff] text-[5vw] sm:text-[7vw] md:text-[5vw] lg:text-[50px] leading-tight block">
             KONZEPT
           </span>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Content Section */}
-      <div className="flex flex-col items-center">
-        {/* Left Image */}
-        <div className="w-full max-w-[1400px] px-6 sm:px-10 md:px-16 lg:px-20 py-10 flex flex-col lg:flex-row items-center">
-          <Image
+      <motion.div 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="flex flex-col items-center"
+      >
+        <div className="w-full max-w-[1400px] px-4 sm:px-8 md:px-12 lg:px-20 py-10 flex flex-col lg:flex-row items-center gap-8">
+          <motion.div 
             ref={imgRef}
-            src="/assets/images/konzept-pic.svg"
-            height={530}
-            width={379}
-            alt="pic"
-            className="mb-6 lg:mb-0 lg:mr-8 w-full max-w-[400px] lg:max-w-[500px]"
-          />
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <Image
+              src="/assets/images/konzept-pic.svg"
+              height={530}
+              width={379}
+              alt="pic"
+              className="w-full max-w-[400px] lg:max-w-[500px] h-auto"
+            />
+          </motion.div>
 
           {/* Text Content */}
-          <div
+          <motion.div
             ref={textRef}
-            className={`${my_font2.className} text-black text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[22px] leading-snug max-w-full lg:max-w-[835px]`}
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className={`${my_font2.className} text-black text-[5vw] sm:text-[3.5vw] md:text-[2.5vw] lg:text-[22px] leading-snug max-w-full lg:max-w-[835px]`}
           >
             <p className="mb-4">
               Musik ist eine Weltsprache. Sie reinigt die Seele und gibt Mut und Kraft in den unterschiedlichsten Situationen des Lebens.
@@ -69,27 +95,30 @@ const Konzept = () => {
               Ziel der Schule für Musik und Kunst Armina Aristak ist es, die Schüler auf ein hohes künstlerisches Niveau zu bringen. Sie bietet Gesangs-, Instrumental- und Schauspiel-Unterricht an. Kinder und Jugendliche, Erwachsene und Senioren singen, spielen und schauspielern in einem gemeinsamen Projekt und treten auf der Bühne auf. Mit Erfolg: Viele Schüler haben bereits Aufträge von professionellen Theatern erhalten.
             </p>
             <p className="mb-4">
-              Zum nächstmöglichsten Zeitpunkt suchen wir Laienmusiker für unser Instrumentalensemble. Kinder und Jugendliche, Erwachsene und Senioren, die ein Instrument spielen können und gerne an unseren Projekten teilnehmen würden, sind herzlich eingeladen. Ein Termin für das Vorspiel wird persönlich vereinbart.
-            </p>
-            <p className="mb-4">
+              Zum nächstmöglichsten Zeitpunkt suchen wir Laienmusiker für unser Ensemble. Kinder und Jugendliche, Erwachsene und Senioren, die Lust haben, an unseren Projekten teilzunehmen, sind herzlich eingeladen. Ein Termin für das Vorspiel wird persönlich vereinbart.
               Bei Interesse bitten wir Sie, das Kontaktformular auszufüllen.
             </p>
             <div className="font-bold mt-6">
               <p>Wir freuen uns auf gemeinsame Projekte mit Ihnen.</p>
               <p>Vielen Dank</p>
             </div>
-          </div>
-        </div> 
-        <button className="border-2 border-[#C29E76] text-[#C29E76] text-lg px-6 py-6 mt-4">
-          Kontaktformular ergänzen
-        </button>
-      </div>
+          </motion.div>
+        </div>
+      </motion.div>
 
-      {/* Form Section - Placed Below for Mobile */}
-      <div ref={formRef} className="w-full flex justify-center py-10 px-6">
+      {/* Form Section */}
+      <motion.div 
+        ref={formRef}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="w-full flex justify-center py-10 px-4"
+      >
         <Form />
-      </div>
-      <Footer/>
+      </motion.div>
+
+      <Footer />
     </main>
   );
 };

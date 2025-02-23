@@ -5,6 +5,7 @@ import { Cormorant_Garamond, Karla } from "next/font/google";
 import Image from "next/image";
 import Form from "@/components/form";
 import { motion } from "framer-motion";
+import { Footer } from "@/components";
 
 const my_font = Cormorant_Garamond({
   weight: "400",
@@ -54,7 +55,7 @@ const Stimmbildung = () => {
           <span className="text-[#C29E76] text-[4vw] sm:text-[3vw] md:text-[2vw] lg:text-[28px] leading-tight block">
             Schule für Musik & Kunst
           </span>
-          <span className="font-extrabold text-[#ffffff] text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[50px] leading-tight block">
+          <span className="font-extrabold text-[#ffffff] text-[5vw] sm:text-[7vw] md:text-[5vw] lg:text-[50px] leading-tight block">
           Stimmbildung
           </span>
         </motion.div>
@@ -122,7 +123,6 @@ const Stimmbildung = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 2 }}
       >
-        <Form />
       </motion.div>
 
       {/* Video Modal */}
@@ -152,7 +152,10 @@ const Stimmbildung = () => {
           </motion.div>
         </motion.div>
       )}
+              <Form />
+<Footer/>
     </motion.main>
+    
   );
 };
 
