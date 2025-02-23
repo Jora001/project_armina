@@ -15,7 +15,7 @@ const my_font = Cormorant_Garamond({ weight: "400", subsets: ["latin"] });
 export default function Header() {
   const navRef = useRef<HTMLElement>(null);
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname(); // <<<<<<<<<<
+  const pathname = usePathname();
 
   useEffect(() => {
     gsap.fromTo(
@@ -28,7 +28,7 @@ export default function Header() {
   // Close menu on route change
   useEffect(() => {
     setIsOpen(false);
-  }, [pathname]); // <<<<<<<<<<
+  }, [pathname]);
 
   return (
     <header
@@ -36,22 +36,23 @@ export default function Header() {
     >
       <nav
         ref={navRef}
-        className="flex items-center gap-7 justify-center fixed left-0 right-0 top-0 bg-white text-black  px-[150px] shadow-md md:px-6"
+        className="flex items-center gap-7 justify-center fixed left-0 right-0 top-0 bg-white text-black px-[150px] shadow-md md:px-6"
       >
         <button
           className="md:hidden absolute left-4 top-4"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
         {isOpen && (
           <ul className="md:hidden flex flex-col items-center gap-4 absolute top-12 left-0 w-full bg-white shadow-md py-4">
-            {NAVIGATION.map((nav) => (
-              <li key={nav.href} className="py-2">
-                <NavItem href={nav.href} label={nav.label} submenu={nav.submenu} />
-              </li>
-            ))}
+         {NAVIGATION.map((nav, index) => (
+  <li key={nav.href || index} className="py-2">
+    <NavItem href={nav.href} label={nav.label} submenu={nav.submenu} />
+  </li>
+))}
           </ul>
         )}
 
