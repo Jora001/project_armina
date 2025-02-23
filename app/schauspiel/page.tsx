@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Karla } from "next/font/google";
 import { motion } from "framer-motion";
+import { Footer } from "@/components";
 
 const myFont = Karla({ weight: "700", subsets: ["latin"] });
 
@@ -100,7 +101,7 @@ const Schauspiel: React.FC = () => {
                       Jetzt buchen
                     </span>
                     <Image
-                      src="/assets/images/vector.svg"
+                      src="/assets/images/Vector.png"
                       alt="vector-cursor"
                       width={16}
                       height={16}
@@ -120,6 +121,8 @@ const Schauspiel: React.FC = () => {
           ))}
         </motion.div>
       </section>
+      <Footer/>
+      
     </motion.main>
   );
 };

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Cormorant_Garamond } from "next/font/google";
 import { motion } from "framer-motion";
 import Form from "@/components/form";
+import { Footer } from "@/components";
 
 const myFont = Cormorant_Garamond({ weight: "700", subsets: ["latin"] });
 
@@ -111,7 +112,7 @@ const projecte: React.FC = () => {
                       Details
                     </span>
                     <Image
-                      src="/assets/images/vector.svg"
+                      src="/assets/images/Vector.png"
                       alt="vector-cursor"
                       width={16}
                       height={16}
@@ -135,6 +136,8 @@ const projecte: React.FC = () => {
           <Form />
         </div>
       </section>
+      <Footer/>
+
     </motion.main>
   );
 };

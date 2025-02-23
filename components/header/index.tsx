@@ -67,8 +67,8 @@ export default function Header() {
             ))}
             <div>
               <Image
-                src="/assets/images/Vector.svg"
-                width={8}
+                src="/assets/images/Vector.png"
+                width={10}
                 height={4}
                 alt="vector"
                 className="icon-img cursor-pointer transform transition-transform duration-300 group-hover:rotate-90"
@@ -88,8 +88,8 @@ export default function Header() {
             ))}
             <div>
               <Image
-                src="/assets/images/Vector.svg"
-                width={8}
+                src="/assets/images/Vector.png"
+                width={10}
                 height={4}
                 alt="vector"
                 className="icon-img cursor-pointer transform transition-transform duration-300 group-hover:rotate-90"

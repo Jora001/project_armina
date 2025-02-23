@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { Cormorant_Garamond } from "next/font/google";
+import { Footer } from "@/components";
 
 const Form = dynamic(() => import("@/components/form"), { ssr: false });
 
@@ -69,7 +70,7 @@ const Instrumental = () => {
                           Jetzt buchen
                         </span>
                         <Image
-                          src="/assets/images/vector.svg"
+                          src="/assets/images/Vector.png"
                           alt="vector-cursor"
                           width={16}
                           height={16}
@@ -90,7 +91,7 @@ const Instrumental = () => {
             ))}
           </div>
         </div>
-      <Form />
+      <Form /><Footer/>
     </main>
   );
 };
