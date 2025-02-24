@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Cormorant_Garamond, Karla } from 'next/font/google'
 import Form from '@/components/form'
+import { Footer } from '@/components'
 
 // Google Fonts initialization
 const my_font = Cormorant_Garamond({ weight: '700', subsets: ['latin'] })
@@ -82,6 +83,7 @@ const Vita = () => {
           <Form />
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

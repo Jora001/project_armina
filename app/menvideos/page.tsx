@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Form from '@/components/form'
+import { Footer } from '@/components'
 
 const menvideos = () => {
   return (
@@ -58,6 +59,7 @@ const menvideos = () => {
         </div>
       </div>
     <Form /> 
+    <Footer/>
   </div>
 // </div>
   )

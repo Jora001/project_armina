@@ -28,7 +28,7 @@ const Musice = () => {
           <span className="text-[#C29E76] text-[5vw] sm:text-[4vw] md:text-[3vw] lg:text-[25px] leading-tight block">
           Schule für Musik & Kunst
           </span>
-          <span className="font-extrabold text-[#ffffff] text-[5vw] sm:text-[7vw] md:text-[5vw] lg:text-[40px] leading-tight block">
+          <span className="font-extrabold text-[#ffffff] text-[4vw] sm:text-[7vw] md:text-[5vw] lg:text-[40px] leading-tight block">
             MUSIKUNTERRICHT FÜR <br /> KINDER AB 4 JAHREN
           </span>
         </div>

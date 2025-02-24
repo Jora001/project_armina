@@ -19,9 +19,11 @@ const Bilder = () => {
           alt="pic" 
           className="w-full h-auto"
         />
-        <div className={`${my_font.className} flex flex-col pl-6 sm:pl-[100px] pt-[110px] absolute top-[50%] translate-y-[-50%] left-6 sm:left-[90px]`}>
-          <span className="text-[#ffffff] text-[24px] sm:text-[28px] leading-[26.49px] mb-[10px]">Armina Aristak</span>
-          <span className="font-bold text-[40px] text-[#ffffff]  sm:text-[60px] leading-[50px] sm:leading-[72.66px]">BILDER</span>
+        <div className={`${my_font.className} flex flex-col pl-6 sm:pl-[100px] pt-[40px] absolute top-[50%] translate-y-[-50%] left-6 sm:left-[90px]`}>
+        <span className='text-xl sm:text-2xl md:text-[28px] font-cormorant text-[#C29E76] mb-2'>
+              Armina Aristak
+            </span>            <span className='text-3xl sm:text-4xl md:text-[60px] font-cormorant text-white font-bold'>
+BILDER            </span>
         </div>
       </div>
 
