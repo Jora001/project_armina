@@ -36,7 +36,7 @@ const slides = [
     id: 5,
     subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten,\n sondern in der Stille dazwischen.",
     description: "Wolfgang Amadeus Mozart",
-    image: "/assets/images/Group80(1).png",
+    image: "/assets/images/newwww.png",
   },
   {
     id: 6,
@@ -81,9 +81,9 @@ const Slider = () => {
               transition={{ duration: 1.2 }}
             />
 
-            <div className="absolute left-10 sm:left-16 md:left-24 lg:left-32 bottom-32 text-left">
+            <div className="absolute left-10 sm:left-16 md:left-24 lg:left-32 bottom-20 text-left">
               <p
-                className="text-[28px] sm:text-[40px] md:text-[50px] lg:text-[60px] font-sans font-bold text-white whitespace-pre-line leading-[70px]"
+                className="text-[18px] sm:text-[25px] md:text-[35px] lg:text-[45px] font-sans font-bold text-white whitespace-pre-line leading-[50px]"
                 style={{
                   WebkitTextStroke: "1px #1453C9",
                   textShadow: "8px 8px 8px rgba(20, 49, 81, 1)",
@@ -92,7 +92,7 @@ const Slider = () => {
                 {slide.subtitle}
               </p>
               <p
-                className="text-[16px] sm:text-[10px] md:text-[20px] lg:text-[22px] font-sans text-white"
+                className="text-[12px] sm:text-[6px] md:text-[16px] lg:text-[18px] font-sans text-white"
                 style={{
                   WebkitTextStroke: "1pxrgb(0, 0, 0)",
                   textShadow: "10px 10px 10px rgba(20, 49, 81, 1)",
