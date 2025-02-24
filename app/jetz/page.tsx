@@ -28,7 +28,7 @@ const Jetz = () => {
             Schule für Musik & Kunst
           </span>
           <span className="font-extrabold text-[#ffffff] text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[50px] leading-tight block">
-            SCHÜLLER
+          SCHAUSPIEL
           </span>
         </div>
       </div>
