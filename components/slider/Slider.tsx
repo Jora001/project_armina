@@ -85,7 +85,7 @@ const Slider = () => {
               <p
                 className="text-[28px] sm:text-[40px] md:text-[50px] lg:text-[60px] font-sans font-bold text-white whitespace-pre-line leading-[70px]"
                 style={{
-                  WebkitTextStroke: "2px #1453C9",
+                  WebkitTextStroke: "1px #1453C9",
                   textShadow: "8px 8px 8px rgba(20, 49, 81, 1)",
                 }}
               >
@@ -94,8 +94,8 @@ const Slider = () => {
               <p
                 className="text-[16px] sm:text-[10px] md:text-[20px] lg:text-[22px] font-sans text-white"
                 style={{
-                  WebkitTextStroke: "1px #1453C9",
-                  textShadow: "8px 8px 8px rgba(20, 49, 81, 1)",
+                  WebkitTextStroke: "1pxrgb(0, 0, 0)",
+                  textShadow: "10px 10px 10px rgba(20, 49, 81, 1)",
                 }}
               >
                 {slide.description}
