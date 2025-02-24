@@ -41,9 +41,16 @@ margin-top: 200px;
   width: auto !important;
 }
 
-.swiper-pagination-bullet {
-  @apply !w-4 !h-4 !bg-gray-400 ;
-  margin: 4px 0 !important;
+.swiper-pagination {
+  @apply relative ml-[10%] mt-[20%];
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  width: 100% !important;
+  left: 0 !important;
+  transform: none !important;
 }
 
 .swiper-pagination-bullet-active {
