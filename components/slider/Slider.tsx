@@ -83,19 +83,19 @@ const Slider = () => {
 
             <div className="absolute left-10 sm:left-16 md:left-24 lg:left-32 bottom-32 text-left">
               <p
-                className="text-[28px] sm:text-[40px] md:text-[50px] lg:text-[60px] font-sans font-bold text-[#012347] whitespace-pre-line leading-[70px]"
+                className="text-[28px] sm:text-[40px] md:text-[50px] lg:text-[60px] font-sans font-bold text-white whitespace-pre-line leading-[70px]"
                 style={{
                   WebkitTextStroke: "2px #1453C9",
-                  textShadow: "4px 0px 0px rgba(20, 49, 81, 1)",
+                  textShadow: "8px 8px 8px rgba(20, 49, 81, 1)",
                 }}
               >
                 {slide.subtitle}
               </p>
               <p
-                className="text-[16px] sm:text-[10px] md:text-[20px] lg:text-[22px] font-sans text-[#143151]"
+                className="text-[16px] sm:text-[10px] md:text-[20px] lg:text-[22px] font-sans text-white"
                 style={{
                   WebkitTextStroke: "1px #1453C9",
-                  textShadow: "4px 0px 0px rgba(20, 49, 81, 1)",
+                  textShadow: "8px 8px 8px rgba(20, 49, 81, 1)",
                 }}
               >
                 {slide.description}
