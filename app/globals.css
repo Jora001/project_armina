@@ -42,16 +42,18 @@ margin-top: 200px;
 }
 
 .swiper-pagination {
-  @apply relative ml-[10%] mt-[20%];
+  @apply relative mt-10 sm:mt-14 md:mt-16;
   display: flex !important;
   flex-direction: row !important;
   justify-content: center !important;
   align-items: center !important;
-  gap: 0.5rem !important;
+  gap: 0.25rem !important;
   width: 100% !important;
   left: 0 !important;
-  transform: none !important;
+  transform: none !important;
+  margin-top:250px
 }
+
 
 .swiper-pagination-bullet-active {
   @apply !w-4 !h-4 !bg-[#FFFFFF] !opacity-100;
@@ -91,4 +93,3 @@ body, html {
   min-height: 100vh;
   overflow-x: hidden;
 }
-

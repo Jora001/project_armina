@@ -46,7 +46,7 @@ function NavItem({ label, href, submenu }: INavItemProps) {
 
       {submenu && isOpen && (
         <div
-          className="absolute left-0 mt-2 w-56 bg-white shadow-lg border rounded-md z-10 transition-opacity duration-200"
+          className="absolute left-0 mt-2 w-56 bg-white shadow-lg border rounded-md z-10 transition-opacity duration-200 lg:mt-2 lg:absolute lg:left-0 lg:top-full md:mt-0 md:relative md:w-full md:shadow-none md:border-none"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -71,9 +71,8 @@ function NavItem({ label, href, submenu }: INavItemProps) {
                 </p>
               </Link>
 
-              {/* Nested submenu (GESANG) */}
               {item.submenu && nestedOpen && (
-                <div className="absolute left-full top-0 w-56 bg-white shadow-lg border rounded-md z-20 transition-opacity duration-200">
+                <div className="lg:absolute lg:left-full lg:top-0 md:relative md:pl-4 lg:pl-0 w-56 bg-white shadow-lg border rounded-md z-20 transition-opacity duration-200 md:w-full md:shadow-none md:border-none">
                   {item.submenu.map((subItem) => (
                     <Link key={subItem.href} href={subItem.href}>
                       <p className="px-4 py-2 hover:bg-gray-200 cursor-pointer">{subItem.label}</p>
