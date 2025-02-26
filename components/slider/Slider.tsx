@@ -72,14 +72,18 @@ const Slider = () => {
             key={slide.id}
             className="relative w-full h-screen flex justify-start items-center bg-black"
           >
-            <motion.img
-              src={slide.image}
-              alt={`Slide ${slide.id}`}
-              className="absolute inset-0 w-full h-full object-cover"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.2 }}
-            />
+          <motion.img
+  src={slide.image}
+  alt={`Slide ${slide.id}`}
+  className="absolute inset-0 w-full h-full object-cover"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1.2 }}
+  style={{
+    transform: "translateY(10%)", // This will move the image 20% down
+  }}
+/>
+
 
             <div className="absolute left-10 sm:left-16 md:left-24 lg:left-32 bottom-20 text-left">
               <p
