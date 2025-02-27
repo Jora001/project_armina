@@ -46,8 +46,6 @@ const slides = [
   },
   {
     id: 7,
-    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
-    description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/aristak.png",
   },
 ];
@@ -64,7 +62,7 @@ const Slider = () => {
         autoplay={{ delay: 2500, disableOnInteraction: false }}
         loop
         allowTouchMove
-        speed={1500}
+        speed={2300}
         className="mySwiper w-full h-screen"
       >
         {slides.map((slide) => (
