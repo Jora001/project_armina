@@ -22,7 +22,7 @@ const Konzept = () => {
   const formRef = useRef(null);
 
   return (
-    <main className="bg-maincolor min-h-screen w-full flex flex-col items-center">
+    <main className="bg-maincolor min-h-screen w-full flex flex-col items-center ">
       {/* Header Image Section */}
       <motion.div 
         initial={{ opacity: 0 }} 

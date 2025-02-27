@@ -16,7 +16,7 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <main className="w-full min-h-screen flex flex-col">
+    <main className="w-full min-h-screen flex flex-col ">
       <CookieConsent />
       <Slider />
       <Firstsection />
