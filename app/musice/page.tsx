@@ -46,32 +46,19 @@ const Musice = () => {
           className={`${my_font.className} flex flex-col text-black  max-w-full lg:w-[50%] text-[20px] font-light `}
         >
           <span className="text-justify">
-            Über mich <br />
-            Mein Name ist María Belén Arellano. Ich bin Schauspielerin und
-            Theaterpädagogin. Mein Heimatland ist Chile, meine Ausbildung habe
-            ich jedoch in Deutschland an der Theaterakademie Stuttgart
-            absolviert. Ich bin leidenschaftliche Pädagogin und betreue seit
-            drei Jahren verschiedene Ferienprogramme, bei denen Zirkus und
-            Theater im Mittelpunkt stehen. Für mich ist das Theater ein
-            wunderbares Mittel, um Geschichten zu erzählen. Kinder beherrschen
-            das intuitiv, doch sie verlieren diese Fähigkeit oft im Alltag des
-            Erwachsenenlebens. Mit meiner Arbeit möchte ich darauf hinwirken,
-            dass generell wieder mehr gespielt wird – sowohl im Alltag als auch
-            auf der Bühne. Mein Angebot richtet sich an Kinder, die ihr Spiel
-            gerne auf einer Bühne zeigen würden, sowie an Erwachsene, die ihre
-            kreative Seite wiederentdecken möchten. Falls ich Ihr Interesse
-            geweckt habe, können Sie mich gerne über das Kontaktformular
-            kontaktieren. Ich freue mich darauf, von Ihnen zu hören und Sie
-            kennenzulernen. <br /> <br />
-            Mit meiner Arbeit möchte ich darauf hinwirken, dass generell wieder
-            mehr gespielt wird – sowohl im Alltag als auch auf der Bühne. Mein
-            Angebot richtet sich an Kinder, die ihr Spiel gerne auf einer Bühne
-            zeigen würden, sowie an Erwachsene, die ihre kreative Seite
-            wiederentdecken möchten. <br />
+            <b>Über mich</b> <br />
+            Mein Name ist María Belén Arellano. Ich bin Schauspielerin und Theaterpädagogin. Mein H2eimatland ist Chile, meine Ausbildung habe ich jedoch in Deutschland an der Theaterakademie Stuttgart absolviert. 
+            Ich bin leidenschaftliche Pädagogin und betreue seit drei Jahren verschiedene Ferienprogramme, bei denen Zirkus und Theater im Mittelpunkt stehen. Für mich ist das Theater ein wunderbares Mittel, um Geschichten zu erzählen. Kinder beherrschen das intuitiv, doch sie verlieren diese Fähigkeit oft im Alltag des Erwachsenenlebens. 
+            Mit meiner Arbeit möchte ich darauf hinwirken, dass generell wieder mehr gespielt wird – sowohl im Alltag als auch auf der Bühne. Mein Angebot richtet sich an Kinder, die ihr Spiel gerne auf einer Bühne zeigen würden, sowie an Erwachsene, die ihre kreative Seite wiederentdecken möchten. 
+            Falls ich Ihr Interesse geweckt habe, können Sie mich gerne über das Kontaktformular kontaktieren. Ich freue mich darauf, von Ihnen zu hören und Sie kennenzulernen.
+            <br /> <br />
+            <b>Schauspielunterricht für Kinder</b> <br />
+            5 bis 7 Kinder pro Gruppe treffen sich einmal in der Woche für eine Stunde. In theaterpädagogischen Spielen bringe ich den Kindern die Schauspielkunst näher. Wir erarbeiten (Theater?)Stücke, Märchen und Erzählungen und setzen sie direkt um. 
+            Dadurch werden Kreativität und Spielfreude der Kinder intensiv gefördert. Denn mein Ziel ist es, ihnen Freude am gemeinsamen Spielen zu vermitteln, ihre Fantasie anzuregen und dabei gleichzeitig ihr Selbstbewusstsein zu stärken.
             <br />
-            Falls ich Ihr Interesse geweckt habe, können Sie mich gerne über das
-            Kontaktformular kontaktieren. Ich freue mich darauf, von Ihnen zu
-            hören und Sie kennenzulernen.
+            <br />
+            <b>Schauspielunterricht für Erwachsene </b> <br />
+            Auch bei den Erwachsenen liegt der Fokus darauf, die Freude am Spielen zu entdecken sowie Sicherheit und Präsenz auf der Bühne aufzubauen. Ich arbeite hier individuell mit jedem Einzelnen, unterstütze die Schüler besonders in jenen Bereichen, in denen sie sich unsicher auf der Bühne fühlen. Bringt jemand Gesangserfahrung mit, nutzen wir auch die, um die allgemeine Ausdrucksfähigkeit zu verbessern.
           </span>
         </div>
       </div>
