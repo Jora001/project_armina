@@ -7,10 +7,10 @@ const my_font2 = Karla({ weight: "400", subsets: ["latin"] });
 
 export default function Footer() {
   return (
-<footer className={`${my_font1.className} bg-maincolor flex flex-col md:flex-row justify-between items-center border-t border-[#6B6B6B24] py-10 px-6 md:px-[100px] relative border-b border-[#6B6B6B] w-full min-h-[250px]`}>
+<footer className={`${my_font1.className} bg-[#EFEBE8] flex flex-col md:flex-row justify-between items-center border-t border-[#6B6B6B24] py-10 px-6 md:px-[100px] relative border-b border-[#6B6B6B] w-full min-h-[250px]`}>
 <div className="flex flex-col md:flex-row md:items-start w-full">
         <Logo />
-        <div className="text-black flex flex-col justify-around md:ml-[40px] mt-6 md:mt-0 w-full">
+        <div className="text-blue flex flex-col justify-around md:ml-[40px] mt-6 md:mt-0 w-full">
           <div>
             <span className="font-bold text-[21.92px] leading-[26.55px]">You can be one step ahead.</span>
             <span className="font-normal text-[19.06px] leading-[23.08px] mt-[10px] mb-[30px] block">

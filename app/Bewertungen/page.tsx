@@ -1,4 +1,4 @@
-import { Footer, Header } from '@/components';
+import { Footer } from '@/components';
 import React from 'react';
 import Image from 'next/image';
 
@@ -65,7 +65,6 @@ const Bewertungen = () => {
 
   return (
     <div className='w-full min-h-screen bg-[#EFEBE8] flex flex-col items-center'>
-      <Header />
 
       <div className='flex-grow container mx-auto mt-40 md:mt-16 lg:mt-24 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32'>
         <div className='text-center'>

@@ -23,7 +23,7 @@ const projecte: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="bg-maincolor min-h-screen w-full flex flex-col items-center"
+      className="bg-maincolor min-h-screen w-full flex flex-col items-center  "
     >
       {/* Background Image with Title */}
       <div className="relative w-full">

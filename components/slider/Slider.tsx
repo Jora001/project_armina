@@ -78,7 +78,6 @@ const Slider = () => {
   animate={{ opacity: 1 }}
   transition={{ duration: 1.2 }}
   style={{
-    transform: "translateY(10%)", // This will move the image 20% down
   }}
 />
 
@@ -140,3 +139,7 @@ const Slider = () => {
 };
 
 export default Slider;
+
+
+
+
