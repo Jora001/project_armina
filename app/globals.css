@@ -5,27 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ededed;
-  --foreground: #1a1a1a; /* Default dark text */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground: #ededed; /* Light text */
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: #1E2B3B !important; /* Մուգ կապույտ տեքստ */
+  background: #ededed; /* Բաց մոխրագույն ֆոն */
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
 }
 
 /* Utility class for blue text with margin */
 .ttt {
-  @apply text-blue-500 text-center mt-[200px];
+  @apply text-blue-500 text-center mt-[200px] !text-[#1E2B3B];
 }
 
 /* Swiper Pagination */

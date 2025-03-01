@@ -27,13 +27,12 @@ const CookieConsent = () => {
     <AnimatePresence>
       {isVisible && (
         <>
-          {/* Cookie Consent Popup */}
           <motion.div
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 50, scale: 0.9 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="fixed bottom-6 left-1/3 transform -translate-x-1/2 w-[90%] max-w-xl backdrop-blur-lg bg-white/80 border border-white/40 text-gray-900 text-base p-6 flex flex-col items-center rounded-2xl shadow-2xl z-50"
+            className="fixed bottom-4 sm:bottom-6 left-0 right-0 mx-auto w-[95%] sm:w-[90%] md:w-[80%] max-w-xl  bg-white/80 border border-white/40 text-gray-900 p-4 sm:p-6 flex flex-col items-center justify-center rounded-2xl shadow-2xl z-50"
           >
             {accepted ? (
               <motion.div
@@ -42,20 +41,20 @@ const CookieConsent = () => {
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 className="flex flex-col items-center"
               >
-                <CheckCircle className="text-green-600" size={48} />
-                <p className="text-green-700 font-semibold text-lg mt-2">Welcome!</p>
+                <CheckCircle className="text-green-600 w-10 h-10 sm:w-12 sm:h-12" />
+                <p className="text-green-700 font-semibold text-base sm:text-lg mt-2">Welcome!</p>
               </motion.div>
             ) : (
               <>
-                <p className="text-center font-semibold text-lg leading-relaxed">
+                <p className="text-center font-semibold text-sm sm:text-base md:text-lg leading-relaxed px-2 sm:px-0">
                   🍪 We use cookies to enhance your browsing experience. By clicking "Accept," you consent to our use of cookies.
                 </p>
-                <div className="flex space-x-4 mt-5">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 sm:mt-5 w-full px-2 sm:px-0 justify-center items-center">
                   <motion.button
                     onClick={handleConsent}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold text-sm transition-all shadow-md"
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-full font-semibold text-xs sm:text-sm transition-all shadow-md w-full sm:w-auto"
                   >
                     Accept
                   </motion.button>
@@ -63,7 +62,7 @@ const CookieConsent = () => {
                     onClick={() => setIsVisible(false)}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-gray-300 hover:bg-gray-400 text-gray-800 px-6 py-2 rounded-full font-semibold text-sm transition-all shadow-md"
+                    className="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 sm:px-6 py-2 rounded-full font-semibold text-xs sm:text-sm transition-all shadow-md w-full sm:w-auto"
                   >
                     Reject
                   </motion.button>
@@ -71,34 +70,35 @@ const CookieConsent = () => {
                     onClick={() => setShowTerms(true)}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold text-sm transition-all shadow-md"
+                    className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 sm:px-6 py-2 rounded-full font-semibold text-xs sm:text-sm transition-all shadow-md w-full sm:w-auto"
                   >
-Impressum                  </motion.button>
+                    Impressum
+                  </motion.button>
                 </div>
               </>
             )}
           </motion.div>
 
-          {/* Terms & Conditions Modal */}
           {showTerms && (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50 p-6"
+              className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50 p-4 sm:p-6"
             >
               <motion.div
                 initial={{ scale: 0.85 }}
                 animate={{ scale: 1 }}
                 exit={{ scale: 0.85 }}
-                className="bg-white rounded-2xl p-8 max-w-4xl w-full shadow-2xl overflow-y-auto max-h-[80vh] relative"
+                className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 w-full max-w-[95%] sm:max-w-[90%] md:max-w-3xl lg:max-w-4xl shadow-2xl overflow-y-auto max-h-[85vh] sm:max-h-[80vh] relative"
               >
-                <button onClick={() => setShowTerms(false)} className="absolute top-4 right-4">
-                  <X className="text-gray-600 hover:text-gray-900" size={28} />
+                <button onClick={() => setShowTerms(false)} className="absolute top-2 sm:top-4 right-2 sm:right-4">
+                  <X className="text-gray-600 hover:text-gray-900 w-6 h-6 sm:w-7 sm:h-7" />
                 </button>
 
-                <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-                IMPRESSUM                </h2>
+                <h2 className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-bold text-gray-900 mb-4 sm:mb-6 text-center">
+                  IMPRESSUM
+                </h2>
 
                 <div className="space-y-6 text-gray-800 leading-relaxed px-4">
                   <div className="border-l-4 border-blue-500 pl-4">
@@ -153,12 +153,12 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
                   </div>
                 </div>
 
-                <div className="mt-8 flex justify-center space-x-6">
+                <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row justify-center gap-3 sm:gap-6 px-2 sm:px-0">
                   <motion.button
                     onClick={() => setShowTerms(false)}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-gray-400 hover:bg-gray-500 text-white px-6 py-2 rounded-full font-semibold text-sm transition-all shadow-md"
+                    className="bg-gray-400 hover:bg-gray-500 text-white px-4 sm:px-6 py-2 rounded-full font-semibold text-xs sm:text-sm transition-all shadow-md w-full sm:w-auto"
                   >
                     Close
                   </motion.button>
@@ -166,7 +166,7 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
                     onClick={handleConsent}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full font-semibold text-sm transition-all shadow-md"
+                    className="bg-green-600 hover:bg-green-700 text-white px-4 sm:px-6 py-2 rounded-full font-semibold text-xs sm:text-sm transition-all shadow-md w-full sm:w-auto"
                   >
                     Accept & Continue
                   </motion.button>
@@ -181,3 +181,18 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 };
 
 export default CookieConsent;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

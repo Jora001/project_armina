@@ -15,7 +15,7 @@ const my_font = Cormorant_Garamond({ weight: "400", subsets: ["latin"] });
 export default function Header() {
   const navRef = useRef<HTMLElement>(null);
   const [isOpen, setIsOpen] = useState(false);
-  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
+  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null); // Single state for both mobile and desktop
   const pathname = usePathname();
 
   useEffect(() => {
@@ -26,15 +26,13 @@ export default function Header() {
     );
   }, []);
 
-  // Close menu on route change
   useEffect(() => {
     setIsOpen(false);
     setOpenSubmenu(null);
   }, [pathname]);
 
-  // Toggle submenu
   const toggleSubmenu = (href: string) => {
-    setOpenSubmenu((prev) => (prev === href ? null : href));
+    setOpenSubmenu((prev) => (prev === href ? null : href)); // Toggle submenu logic
   };
 
   return (
@@ -55,7 +53,7 @@ export default function Header() {
               <li key={`nav-${index}`} className="py-2 w-full text-center">
                 <div
                   className="cursor-pointer flex flex-col items-center"
-                  onClick={() => nav.submenu && toggleSubmenu(nav.href)}
+                  onClick={() => nav.submenu && toggleSubmenu(nav.href)} // Toggle only for this item
                 >
                   <NavItem href={nav.href} label={nav.label} submenu={nav.submenu} />
                   {nav.submenu && (
@@ -71,7 +69,7 @@ export default function Header() {
                   )}
                 </div>
 
-                {/* Submenu */}
+                {/* Submenu - Only open if this specific nav.href matches openSubmenu */}
                 {nav.submenu && openSubmenu === nav.href && (
                   <ul className="mt-2 bg-gray-100 rounded-md p-2 w-[90%] mx-auto">
                     {nav.submenu.map((sub, subIndex) => (
