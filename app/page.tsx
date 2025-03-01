@@ -34,13 +34,15 @@ export default function Home() {
 
         <div className="flex-1 bg-[#1E2B3B] text-white flex items-center px-6 sm:px-8 md:px-12 py-8 md:py-14">
           <div className="relative w-full max-w-[700px] mx-auto">
-            <Image
-              src="/assets/images/image4.svg"
-              alt="image4"
-              width={80}
-              height={84}
-              className="absolute left-4 sm:left-8 top-[-20px] md:top-0 w-12 sm:w-16 md:w-20"
-            />
+          <Image
+  src="/assets/images/image4.svg"
+  alt="image4"
+  width={80}
+  height={84}
+  className="absolute left-4 sm:left-8 top-[-50px] md:top-[-50px] w-12 sm:w-16 md:w-20"
+/>
+
+
             <p className="text-[24px] sm:text-[28px] md:text-[33.36px] font-cormorant font-bold mt-[60px] md:mt-[70px]">
               Armina Aristak
             </p>
