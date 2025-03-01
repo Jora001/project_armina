@@ -42,12 +42,15 @@ const CookieConsent = () => {
                 className="flex flex-col items-center"
               >
                 <CheckCircle className="text-green-600 w-10 h-10 sm:w-12 sm:h-12" />
-                <p className="text-green-700 font-semibold text-base sm:text-lg mt-2">Welcome!</p>
+                <p className="text-green-700 font-semibold text-base sm:text-lg mt-2">
+                  Welcome!
+                </p>
               </motion.div>
             ) : (
               <>
                 <p className="text-center font-semibold text-sm sm:text-base md:text-lg leading-relaxed px-2 sm:px-0">
-                  🍪 We use cookies to enhance your browsing experience. By clicking "Accept," you consent to our use of cookies.
+                  🍪 We use cookies to enhance your browsing experience. By
+                  clicking "Accept," you consent to our use of cookies.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 sm:mt-5 w-full px-2 sm:px-0 justify-center items-center">
                   <motion.button
@@ -92,7 +95,10 @@ const CookieConsent = () => {
                 exit={{ scale: 0.85 }}
                 className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 w-full max-w-[95%] sm:max-w-[90%] md:max-w-3xl lg:max-w-4xl shadow-2xl overflow-y-auto max-h-[85vh] sm:max-h-[80vh] relative"
               >
-                <button onClick={() => setShowTerms(false)} className="absolute top-2 sm:top-4 right-2 sm:right-4">
+                <button
+                  onClick={() => setShowTerms(false)}
+                  className="absolute top-2 sm:top-4 right-2 sm:right-4"
+                >
                   <X className="text-gray-600 hover:text-gray-900 w-6 h-6 sm:w-7 sm:h-7" />
                 </button>
 
@@ -102,54 +108,95 @@ const CookieConsent = () => {
 
                 <div className="space-y-6 text-gray-800 leading-relaxed px-4">
                   <div className="border-l-4 border-blue-500 pl-4">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Impressum</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Impressum
+                    </h3>
                     <p>
-                    
-
-Angaben gemäß § 5 TMG: <br />
-
-Schule für Musik und Kunst Armina Aristak <br />
-
-Luise-Duttenhofer-Weg 14, <br />
-
-71334, Waiblingen <br />
-
-Telefon: +34 123 456 789 <br />
-
-E-Mail: andreaDesign@gmail.com
-
-<br />
-
-Steuernummer: 90129/27508 <br />
-
-Finanzamt Waiblingen <br />
-
-Inhaltliche Verantwortliche: Armine Ghukasyan
+                      Angaben gemäß § 5 TMG: <br />
+                      Schule für Musik und Kunst Armina Aristak <br />
+                      Luise-Duttenhofer-Weg 14, <br />
+                      71334, Waiblingen <br />
+                      Telefon: +34 123 456 789 <br />
+                      E-Mail: andreaDesign@gmail.com
+                      <br />
+                      Steuernummer: 90129/27508 <br />
+                      Finanzamt Waiblingen <br />
+                      Inhaltliche Verantwortliche: Armine Ghukasyan
                     </p>
                   </div>
 
                   <div className="border-l-4 border-red-500 pl-4">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Haftungsausschluss</h3>
-                   
-                    <h5 className="text-xl font-semibold text-gray-700 mb-2">Haftung für Inhalte</h5>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Haftungsausschluss
+                    </h3>
+
+                    <h5 className="text-xl font-semibold text-gray-700 mb-2">
+                      Haftung für Inhalte
+                    </h5>
 
                     <p>
-                    Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach § 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+                      Die Inhalte unserer Seiten wurden mit größter Sorgfalt
+                      erstellt. Für die Richtigkeit, Vollständigkeit und
+                      Aktualität der Inhalte können wir jedoch keine Gewähr
+                      übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1
+                      TMG für eigene Inhalte auf diesen Seiten nach den
+                      allgemeinen Gesetzen verantwortlich. Nach § 8 bis 10 TMG
+                      sind wir als Diensteanbieter jedoch nicht verpflichtet,
+                      übermittelte oder gespeicherte fremde Informationen zu
+                      überwachen oder nach Umständen zu forschen, die auf eine
+                      rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur
+                      Entfernung oder Sperrung der Nutzung von Informationen
+                      nach den allgemeinen Gesetzen bleiben hiervon unberührt.
+                      Eine diesbezügliche Haftung ist jedoch erst ab dem
+                      Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung
+                      möglich. Bei Bekanntwerden von entsprechenden
+                      Rechtsverletzungen werden wir diese Inhalte umgehend
+                      entfernen.
                     </p>
                   </div>
 
                   <div className="border-l-4 border-green-500 pl-4">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Haftung für Links</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Haftung für Links
+                    </h3>
                     <p>
-                    Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+                      Unser Angebot enthält Links zu externen Webseiten Dritter,
+                      auf deren Inhalte wir keinen Einfluss haben. Deshalb
+                      können wir für diese fremden Inhalte auch keine Gewähr
+                      übernehmen. Für die Inhalte der verlinkten Seiten ist
+                      stets der jeweilige Anbieter oder Betreiber der Seiten
+                      verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt
+                      der Verlinkung auf mögliche Rechtsverstöße überprüft.
+                      Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung
+                      nicht erkennbar. Eine permanente inhaltliche Kontrolle der
+                      verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte
+                      einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden
+                      von Rechtsverletzungen werden wir derartige Links umgehend
+                      entfernen.
                     </p>
                   </div>
 
-
                   <div className="border-l-4 border-blue-500 pl-4">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Urheberrecht</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Urheberrecht
+                    </h3>
                     <p>
-Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.                    </p>
+                      Die durch die Seitenbetreiber erstellten Inhalte und Werke
+                      auf diesen Seiten unterliegen dem deutschen Urheberrecht.
+                      Die Vervielfältigung, Bearbeitung, Verbreitung und jede
+                      Art der Verwertung außerhalb der Grenzen des
+                      Urheberrechtes bedürfen der schriftlichen Zustimmung des
+                      jeweiligen Autors bzw. Erstellers. Downloads und Kopien
+                      dieser Seite sind nur für den privaten, nicht
+                      kommerziellen Gebrauch gestattet. Soweit die Inhalte auf
+                      dieser Seite nicht vom Betreiber erstellt wurden, werden
+                      die Urheberrechte Dritter beachtet. Insbesondere werden
+                      Inhalte Dritter als solche gekennzeichnet. Sollten Sie
+                      trotzdem auf eine Urheberrechtsverletzung aufmerksam
+                      werden, bitten wir um einen entsprechenden Hinweis. Bei
+                      Bekanntwerden von Rechtsverletzungen werden wir derartige
+                      Inhalte umgehend entfernen.{" "}
+                    </p>
                   </div>
                 </div>
 
@@ -181,18 +228,3 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 };
 
 export default CookieConsent;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

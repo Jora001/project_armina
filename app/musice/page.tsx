@@ -14,7 +14,6 @@ const myFont = Cormorant_Garamond({
 const Music = () => {
   return (
     <main className="bg-maincolor min-h-screen w-full flex flex-col items-center">
-      {/* Background Image with Title */}
       <div className="relative w-full">
         <Image
           src="/assets/images/schuller_background.svg"
@@ -36,7 +35,6 @@ const Music = () => {
         </div>
       </div>
 
-      {/* Content Section */}
       <div className="flex flex-col lg:flex-row pt-[30px] lg:px-[70px] gap-6">
         <Image
           src="/assets/images/dasnam.png"
@@ -50,27 +48,45 @@ const Music = () => {
         >
           <strong>Der märchenhafte Weg in die Musik –</strong> <br />
           Das Konzept „Dora im Musikwald“ <br />
-          Kinder lieben Musik. Schon im Mutterleib reagieren sie auf Töne und Melodien, bereits in jüngsten Jahren nehmen sie Rhythmen auf,
-          tanzen und singen. Das alles geschieht von selbst, ohne Unterricht. <br /><br />
-          Wollen sie jedoch ein Instrument spielen, ist mehr nötig: Sie müssen Noten lernen und deren Bedeutung und Platz auf der
-          musikalischen Klaviatur kennen.
+          Kinder lieben Musik. Schon im Mutterleib reagieren sie auf Töne und
+          Melodien, bereits in jüngsten Jahren nehmen sie Rhythmen auf, tanzen
+          und singen. Das alles geschieht von selbst, ohne Unterricht. <br />
+          <br />
+          Wollen sie jedoch ein Instrument spielen, ist mehr nötig: Sie müssen
+          Noten lernen und deren Bedeutung und Platz auf der musikalischen
+          Klaviatur kennen.
         </span>
       </div>
 
-      {/* Description Section */}
-      <div className={`${myFont.className} bg-maincolor text-black px-5 lg:px-[120px]`}>
+      <div
+        className={`${myFont.className} bg-maincolor text-black px-5 lg:px-[120px]`}
+      >
         <span className="max-w-full lg:w-[1268px] text-[18px] lg:text-[22px] border-t border-black pt-[30px] pb-[30px] text-justify block">
-          Kinder lernen gerne, am liebsten aber beim Spielen. Und sie hören gerne Geschichten. Was also wäre, wenn man die Freude an der
-          Musik mit jener am Spielen und an Geschichten zusammenbrächte? <br /><br />
-          Genau das tut das Konzept von Armina Aristak. <br /><br />
-          „Dora im Musikwald“ holt die Kinder in ihrer Welt ab und führt sie wie von selbst in die Welt der Musik. Zusammen mit Dora lernen
-          Kinder deren märchenhaften, klingenden Wald kennen und erfahren dabei gleichzeitig, auf welchen Grundlagen die Musik beruht und
-          wie sie selbst auf einer Klaviertastatur Melodien entstehen lassen können. <br /><br />
-          Armina Aristaks Lehrmethode für Kinder ab 4 Jahren beinhaltet deshalb nicht nur ein Buch mit altdeutschen Volksliedern, zum
-          Lernmaterial gehören auch ein 120x190 Zentimeter großer Teppich mit Klaviertastatur und ein Set mit 72 Spielkarten. Die von
-          Francesca R. Pasqualini liebevoll gestalteten Kärtchen hauchen den Figuren aus Gohar Ghukasyans Märchen „Dora im Musikwald“
-          Leben ein und vermitteln den Kindern spielerisch all das Wissen, das sie zum Musizieren benötigen. <br /><br />
-          Die Welt der Musik ist märchenhaft, der Weg dorthin kann es auch sein. <br /><br />
+          Kinder lernen gerne, am liebsten aber beim Spielen. Und sie hören
+          gerne Geschichten. Was also wäre, wenn man die Freude an der Musik mit
+          jener am Spielen und an Geschichten zusammenbrächte? <br />
+          <br />
+          Genau das tut das Konzept von Armina Aristak. <br />
+          <br />
+          „Dora im Musikwald“ holt die Kinder in ihrer Welt ab und führt sie wie
+          von selbst in die Welt der Musik. Zusammen mit Dora lernen Kinder
+          deren märchenhaften, klingenden Wald kennen und erfahren dabei
+          gleichzeitig, auf welchen Grundlagen die Musik beruht und wie sie
+          selbst auf einer Klaviertastatur Melodien entstehen lassen können.{" "}
+          <br />
+          <br />
+          Armina Aristaks Lehrmethode für Kinder ab 4 Jahren beinhaltet deshalb
+          nicht nur ein Buch mit altdeutschen Volksliedern, zum Lernmaterial
+          gehören auch ein 120x190 Zentimeter großer Teppich mit Klaviertastatur
+          und ein Set mit 72 Spielkarten. Die von Francesca R. Pasqualini
+          liebevoll gestalteten Kärtchen hauchen den Figuren aus Gohar
+          Ghukasyans Märchen „Dora im Musikwald“ Leben ein und vermitteln den
+          Kindern spielerisch all das Wissen, das sie zum Musizieren benötigen.{" "}
+          <br />
+          <br />
+          Die Welt der Musik ist märchenhaft, der Weg dorthin kann es auch sein.{" "}
+          <br />
+          <br />
           Viel Vergnügen beim Musizieren.
         </span>
       </div>
@@ -105,7 +121,6 @@ const Music = () => {
         ))}
       </div>
 
-      {/* Call to Action */}
       <div className="flex justify-start ml-[250px] w-full py-8">
         <Link href="/contact">
           <motion.button
@@ -115,7 +130,9 @@ const Music = () => {
           >
             <span className="absolute inset-0 bg-[#C29E76] scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100" />
             <div className="relative z-10 flex items-center gap-2">
-              <span className={`${myFont.className} text-[20px] whitespace-nowrap`}>
+              <span
+                className={`${myFont.className} text-[20px] whitespace-nowrap`}
+              >
                 Jetzt buchen
               </span>
               <Image

@@ -1,8 +1,7 @@
-import React, { useEffect, useState, useRef } from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import React, { useEffect, useState, useRef } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-// Define the prop types for Counter
 type CounterProps = {
   end: number;
 };
@@ -14,7 +13,7 @@ const Counter: React.FC<CounterProps> = ({ end }) => {
 
   useEffect(() => {
     const currentRef = ref.current;
-  
+
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
@@ -22,11 +21,11 @@ const Counter: React.FC<CounterProps> = ({ end }) => {
       },
       { threshold: 0.5 }
     );
-  
+
     if (currentRef) {
       observer.observe(currentRef);
     }
-  
+
     return () => {
       if (currentRef) observer.unobserve(currentRef);
     };
@@ -63,14 +62,13 @@ const Firstsection: React.FC = () => {
         className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 max-w-7xl w-full"
       >
         <div className="relative flex justify-center">
-        <Image
-              src="/assets/images/square.svg"
-              alt="square"
-              width={265}
-              height={327}
-              
-              className="hidden md:block absolute top-[35%] right-[135px] w-[150px] md:w-[200px] lg:w-[265px] z-[-0]"
-            />
+          <Image
+            src="/assets/images/square.svg"
+            alt="square"
+            width={265}
+            height={327}
+            className="hidden md:block absolute top-[35%] right-[135px] w-[150px] md:w-[200px] lg:w-[265px] z-[-0]"
+          />
           <Image
             src="/assets/images/imageyea.png"
             alt="image2"
@@ -84,31 +82,31 @@ const Firstsection: React.FC = () => {
           <h1 className="text-[28px] md:text-[50px] lg:text-[60px] text-[#1E2B3B] font-cormorant font-medium">
             Exploring The Beauty <br /> Of Adornments
           </h1>
-           <div className="flex items-center justify-center md:justify-start  gap-4 mt-4 max-w-4xl w-200">
-              <Image
-                src="/assets/images/line.svg"
-                width={7}
-                height={0.8}
-                alt="line"
-                className="drop-shadow-lg hidden md:block"
-              />
-              <p className="text-[16px] md:text-[18px] lg:text-[18px] font-Karla text-[#1E2B3B] font-light leading-[1.4]">
-                Ziel der Schule für Musik und Kunst{" "}
-                <span className="whitespace-nowrap">Schüler</span> auf ein hohes
-                künstlerisches Niveau zu bringen. Sie bietet Gesangs- <br />
-                Instrumental- und Schauspiel-Unterricht an. Kinder und
-                Jugendliche, Erwachsene und Senioren singen, spielen und
-                schauspielern.
-              </p>
-            </div>
+          <div className="flex items-center justify-center md:justify-start  gap-4 mt-4 max-w-4xl w-200">
+            <Image
+              src="/assets/images/line.svg"
+              width={7}
+              height={0.8}
+              alt="line"
+              className="drop-shadow-lg hidden md:block"
+            />
+            <p className="text-[16px] md:text-[18px] lg:text-[18px] font-Karla text-[#1E2B3B] font-light leading-[1.4]">
+              Ziel der Schule für Musik und Kunst{" "}
+              <span className="whitespace-nowrap">Schüler</span> auf ein hohes
+              künstlerisches Niveau zu bringen. Sie bietet Gesangs- <br />
+              Instrumental- und Schauspiel-Unterricht an. Kinder und
+              Jugendliche, Erwachsene und Senioren singen, spielen und
+              schauspielern.
+            </p>
+          </div>
         </div>
       </motion.div>
 
       <div className="flex flex-col md:flex-row justify-center md:justify-between mt-20 gap-8 md:gap-16 text-center w-full max-w-7xl">
         {[
-          { number: 10, title: 'Allüren der Erfahrung' },
-          { number: 8, title: 'Allüren der Erfahrung' },
-          { number: 120, title: 'Allüren der Erfahrung' },
+          { number: 10, title: "Allüren der Erfahrung" },
+          { number: 8, title: "Allüren der Erfahrung" },
+          { number: 120, title: "Allüren der Erfahrung" },
         ].map((stat, index) => (
           <motion.div
             key={index}

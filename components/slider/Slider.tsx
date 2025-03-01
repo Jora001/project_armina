@@ -10,37 +10,43 @@ import "swiper/css/pagination";
 const slides = [
   {
     id: 1,
-    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
+    subtitle:
+      "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
     description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/dasnam.png",
   },
   {
     id: 2,
-    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
+    subtitle:
+      "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
     description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/ere.png",
   },
   {
     id: 3,
-    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
+    subtitle:
+      "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
     description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/cax.png",
   },
   {
     id: 4,
-    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
+    subtitle:
+      "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
     description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/ton.png",
   },
   {
     id: 5,
-    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
+    subtitle:
+      "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
     description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/newwww.png",
   },
   {
     id: 6,
-    subtitle: "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
+    subtitle:
+      "Ohne Musik wär‘ alles nichts.\nDie Musik steckt nicht in den Noten, sondern in der Stille dazwischen.",
     description: "Wolfgang Amadeus Mozart",
     image: "/assets/images/abc.png",
   },
@@ -70,17 +76,15 @@ const Slider = () => {
             key={slide.id}
             className="relative w-full h-screen flex justify-start items-center bg-black"
           >
-          <motion.img
-  src={slide.image}
-  alt={`Slide ${slide.id}`}
-  className="absolute inset-0 w-full h-full object-cover"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 1.2 }}
-  style={{
-  }}
-/>
-
+            <motion.img
+              src={slide.image}
+              alt={`Slide ${slide.id}`}
+              className="absolute inset-0 w-full h-full object-cover"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.2 }}
+              style={{}}
+            />
 
             <div className="absolute left-10 sm:left-16 md:left-24 lg:left-32 bottom-20 text-left">
               <p
@@ -139,7 +143,3 @@ const Slider = () => {
 };
 
 export default Slider;
-
-
-
-

@@ -12,9 +12,24 @@ const myFont = Cormorant_Garamond({ weight: "700", subsets: ["latin"] });
 
 // Team member data
 const teamMembers = [
-  { img: "/assets/images/image5.png", name: "Porjekt 1", desc: "Schauspielerin und\nTheaterpädagogin.", link: "/team/maria-belen" },
-  { img: "/assets/images/tuxt.png", name: "Porjekt 2", desc: "Schauspielerin und\nTheaterpädagogin.", link: "/team/maria-belen" },
-  { img: "/assets/images/bab.png", name: "Porjekt 3", desc: "Schauspielerin und\nTheaterpädagogin.", link: "/team/maria-belen" },
+  {
+    img: "/assets/images/image5.png",
+    name: "Porjekt 1",
+    desc: "Schauspielerin und\nTheaterpädagogin.",
+    link: "/team/maria-belen",
+  },
+  {
+    img: "/assets/images/tuxt.png",
+    name: "Porjekt 2",
+    desc: "Schauspielerin und\nTheaterpädagogin.",
+    link: "/team/maria-belen",
+  },
+  {
+    img: "/assets/images/bab.png",
+    name: "Porjekt 3",
+    desc: "Schauspielerin und\nTheaterpädagogin.",
+    link: "/team/maria-belen",
+  },
 ];
 
 const projecte: React.FC = () => {
@@ -25,7 +40,6 @@ const projecte: React.FC = () => {
       transition={{ duration: 0.8 }}
       className="bg-maincolor min-h-screen w-full flex flex-col items-center  "
     >
-      {/* Background Image with Title */}
       <div className="relative w-full">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -42,7 +56,6 @@ const projecte: React.FC = () => {
           />
         </motion.div>
 
-        {/* Animated Projekte Title */}
         <motion.div
           initial={{ opacity: 0.3 }}
           animate={{ opacity: [0.6, 1, 0.6] }}
@@ -55,7 +68,6 @@ const projecte: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* Team Section */}
       <section className="container mx-auto px-4 sm:px-6 md:px-8 py-12">
         <motion.div
           initial="hidden"
@@ -82,7 +94,6 @@ const projecte: React.FC = () => {
                 transition={{ type: "spring", stiffness: 200 }}
                 className="rounded-lg overflow-hidden cursor-pointer group relative"
               >
-                {/* Glow Effect */}
                 <div className="absolute inset-0 bg-transparent group-hover:bg-cyan-500/20 transition duration-500 rounded-lg"></div>
 
                 <Image
@@ -95,10 +106,14 @@ const projecte: React.FC = () => {
                 />
               </motion.div>
 
-              <h3 className={`${myFont.className} text-lg font-bold mt-4 text-[#000000]`}>
+              <h3
+                className={`${myFont.className} text-lg font-bold mt-4 text-[#000000]`}
+              >
                 {person.name}
               </h3>
-              <p className="text-sm text-[#544f4a] font-semibold whitespace-pre-line">{person.desc}</p>
+              <p className="text-sm text-[#544f4a] font-semibold whitespace-pre-line">
+                {person.desc}
+              </p>
 
               <Link href="/detalis">
                 <motion.button
@@ -136,8 +151,7 @@ const projecte: React.FC = () => {
           <Form />
         </div>
       </section>
-      <Footer/>
-
+      <Footer />
     </motion.main>
   );
 };
