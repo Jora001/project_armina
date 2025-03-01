@@ -10,9 +10,7 @@ const GallerySection = () => {
         Facellus lorem malesuada ligula pulvinar commodo maecenas
       </p>
 
-      {/* Gallery Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-[2rem]">
-        {/* Left Side */}
         <div className="flex flex-col gap-3">
           <Image
             src="/assets/images/rectangle13.svg"
@@ -23,7 +21,6 @@ const GallerySection = () => {
           />
         </div>
 
-        {/* Center Images */}
         <div className="flex flex-col gap-3">
           <Image
             src="/assets/images/rectangle14.svg"
@@ -50,7 +47,6 @@ const GallerySection = () => {
           </div>
         </div>
 
-        {/* Right Side */}
         <div className="flex flex-col gap-3">
           <Image
             src="/assets/images/rectangle12.svg"

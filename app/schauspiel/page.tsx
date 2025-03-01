@@ -9,9 +9,13 @@ import { Footer } from "@/components";
 
 const myFont = Karla({ weight: "700", subsets: ["latin"] });
 
-// Team member data
 const teamMembers = [
-  { img: "/assets/images/image(9).png", name: "María Belén Arellano", desc: "Piano Lehrer", link: "/team/maria-belen" },
+  {
+    img: "/assets/images/image(9).png",
+    name: "María Belén Arellano",
+    desc: "Piano Lehrer",
+    link: "/team/maria-belen",
+  },
   // { img: "/assets/images/image(9).png", name: "María Belén Arellano", desc: "Piano Lehrer", link: "/team/maria-belen" },
   // { img: "/assets/images/image(9).png", name: "María Belén Arellano", desc: "Piano Lehrer", link: "/team/maria-belen" },
 ];
@@ -24,7 +28,6 @@ const Schauspiel: React.FC = () => {
       transition={{ duration: 0.8 }}
       className="bg-maincolor min-h-screen w-full flex flex-col items-center"
     >
-      {/* Background Image with Title */}
       <div className="relative w-full">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -51,21 +54,23 @@ const Schauspiel: React.FC = () => {
           </span>
           <span
             className="font-bold text-[#ffffff] block"
-            style={{ fontSize: "clamp(18px, 3.5vw, 40px)", whiteSpace: "nowrap" }}
+            style={{
+              fontSize: "clamp(18px, 3.5vw, 40px)",
+              whiteSpace: "nowrap",
+            }}
           >
             SCHAUSPIEL
           </span>
         </motion.div>
       </div>
 
-      {/* Team Section */}
       <section className="container mx-auto px-4 sm:px-6 md:px-8 py-12">
         <motion.div
           initial="hidden"
           animate="visible"
           variants={{
             hidden: { opacity: 0, scale: 0.8 },
-            visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } }
+            visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
           }}
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
         >
@@ -85,10 +90,14 @@ const Schauspiel: React.FC = () => {
                 className="rounded-lg shadow-md"
                 loading="lazy"
               />
-              <h3 className={`${myFont.className} text-lg font-bold mt-4 text-[#000000]`}>
+              <h3
+                className={`${myFont.className} text-lg font-bold mt-4 text-[#000000]`}
+              >
                 {person.name}
               </h3>
-              <p className="text-sm text-[#544f4a] font-semibold">{person.desc}</p>
+              <p className="text-sm text-[#544f4a] font-semibold">
+                {person.desc}
+              </p>
               <Link href="/jetz">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
@@ -121,8 +130,7 @@ const Schauspiel: React.FC = () => {
           ))}
         </motion.div>
       </section>
-      <Footer/>
-      
+      <Footer />
     </motion.main>
   );
 };

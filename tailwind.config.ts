@@ -1,4 +1,4 @@
-import { Karla } from "next/font/google";
+// import { Karla } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {

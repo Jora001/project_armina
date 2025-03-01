@@ -128,7 +128,11 @@ const Contact = () => {
               </div>
             </div>
 
-            <form className="space-y-6 sm:space-y-8" onSubmit={handleSend} noValidate>
+            <form
+              className="space-y-6 sm:space-y-8"
+              onSubmit={handleSend}
+              noValidate
+            >
               <div>
                 <label className="text-[#1E2B3B] text-[16px] sm:text-[18px] md:text-[20px] font-cormorant block mb-2">
                   Name*
@@ -144,7 +148,9 @@ const Contact = () => {
                   placeholder="John Smith"
                 />
                 {errors.name && (
-                  <p className="text-red-500 text-[12px] sm:text-[14px] mt-1">{errors.name}</p>
+                  <p className="text-red-500 text-[12px] sm:text-[14px] mt-1">
+                    {errors.name}
+                  </p>
                 )}
               </div>
 
@@ -163,7 +169,9 @@ const Contact = () => {
                   placeholder="email@gmail.com"
                 />
                 {errors.email && (
-                  <p className="text-red-500 text-[12px] sm:text-[14px] mt-1">{errors.email}</p>
+                  <p className="text-red-500 text-[12px] sm:text-[14px] mt-1">
+                    {errors.email}
+                  </p>
                 )}
               </div>
 

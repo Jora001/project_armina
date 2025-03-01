@@ -1,4 +1,4 @@
-"use client";  // ❗ Անհրաժեշտ է, որպեսզի `useState`-ը աշխատի
+"use client"; // ❗ Անհրաժեշտ է, որպեսզի `useState`-ը աշխատի
 
 import React, { useState } from "react";
 import { Cormorant_Garamond, Karla } from "next/font/google";
@@ -37,7 +37,6 @@ const Stimmbildung = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      {/* Background Image with Title */}
       <div className="relative w-full">
         <Image
           src="/assets/images/schuller_background.svg"
@@ -56,19 +55,19 @@ const Stimmbildung = () => {
             Schule für Musik & Kunst
           </span>
           <span className="font-extrabold text-[#ffffff] text-[5vw] sm:text-[7vw] md:text-[5vw] lg:text-[50px] leading-tight block">
-          Stimmbildung
+            Stimmbildung
           </span>
         </motion.div>
       </div>
 
-      {/* Grid of Images with Play Icon */}
       <motion.div
         className={`${my_font2.className} text-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 p-[20px] sm:p-[40px] md:p-[60px] lg:p-[90px]`}
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
       >
-        {["/assets/images/pic_1_schuller.svg",
+        {[
+          "/assets/images/pic_1_schuller.svg",
           "/assets/images/pic_2_schuller.svg",
           "/assets/images/pic_3_schuller.svg",
           "/assets/images/pic_4_schuller.svg",
@@ -104,7 +103,6 @@ const Stimmbildung = () => {
         ))}
       </motion.div>
 
-      {/* View All Button */}
       <motion.div
         className="flex justify-center mt-6"
         initial={{ opacity: 0, y: 20 }}
@@ -116,16 +114,13 @@ const Stimmbildung = () => {
         </button>
       </motion.div>
 
-      {/* Form Component */}
       <motion.div
         className="mt-10 flex justify-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 2 }}
-      >
-      </motion.div>
+      ></motion.div>
 
-      {/* Video Modal */}
       {isModalOpen && (
         <motion.div
           className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
@@ -152,10 +147,9 @@ const Stimmbildung = () => {
           </motion.div>
         </motion.div>
       )}
-              <Form />
-<Footer/>
+      <Form />
+      <Footer />
     </motion.main>
-    
   );
 };
 

@@ -23,10 +23,9 @@ const Konzept = () => {
 
   return (
     <main className="bg-maincolor min-h-screen w-full flex flex-col items-center ">
-      {/* Header Image Section */}
-      <motion.div 
-        initial={{ opacity: 0 }} 
-        animate={{ opacity: 1 }} 
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         className="relative w-full"
       >
@@ -54,8 +53,7 @@ const Konzept = () => {
         </motion.div>
       </motion.div>
 
-      {/* Content Section */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -63,7 +61,7 @@ const Konzept = () => {
         className="flex flex-col items-center"
       >
         <div className="w-full max-w-[1400px] px-4 sm:px-8 md:px-12 lg:px-20 py-10 flex flex-col lg:flex-row items-center gap-8">
-          <motion.div 
+          <motion.div
             ref={imgRef}
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
@@ -79,7 +77,6 @@ const Konzept = () => {
             />
           </motion.div>
 
-          {/* Text Content */}
           <motion.div
             ref={textRef}
             initial={{ x: 50, opacity: 0 }}
@@ -89,14 +86,25 @@ const Konzept = () => {
             className={`${my_font2.className} text-black text-[5vw] sm:text-[3.5vw] md:text-[2.5vw] lg:text-[22px] leading-snug max-w-full lg:max-w-[835px]`}
           >
             <p className="mb-4">
-              Musik ist eine Weltsprache. Sie reinigt die Seele und gibt Mut und Kraft in den unterschiedlichsten Situationen des Lebens.
+              Musik ist eine Weltsprache. Sie reinigt die Seele und gibt Mut und
+              Kraft in den unterschiedlichsten Situationen des Lebens.
             </p>
             <p className="mb-4">
-              Ziel der Schule für Musik und Kunst Armina Aristak ist es, die Schüler auf ein hohes künstlerisches Niveau zu bringen. Sie bietet Gesangs-, Instrumental- und Schauspiel-Unterricht an. Kinder und Jugendliche, Erwachsene und Senioren singen, spielen und schauspielern in einem gemeinsamen Projekt und treten auf der Bühne auf. Mit Erfolg: Viele Schüler haben bereits Aufträge von professionellen Theatern erhalten.
+              Ziel der Schule für Musik und Kunst Armina Aristak ist es, die
+              Schüler auf ein hohes künstlerisches Niveau zu bringen. Sie bietet
+              Gesangs-, Instrumental- und Schauspiel-Unterricht an. Kinder und
+              Jugendliche, Erwachsene und Senioren singen, spielen und
+              schauspielern in einem gemeinsamen Projekt und treten auf der
+              Bühne auf. Mit Erfolg: Viele Schüler haben bereits Aufträge von
+              professionellen Theatern erhalten.
             </p>
             <p className="mb-4">
-              Zum nächstmöglichsten Zeitpunkt suchen wir Laienmusiker für unser Ensemble. Kinder und Jugendliche, Erwachsene und Senioren, die Lust haben, an unseren Projekten teilzunehmen, sind herzlich eingeladen. Ein Termin für das Vorspiel wird persönlich vereinbart.
-              Bei Interesse bitten wir Sie, das Kontaktformular auszufüllen.
+              Zum nächstmöglichsten Zeitpunkt suchen wir Laienmusiker für unser
+              Ensemble. Kinder und Jugendliche, Erwachsene und Senioren, die
+              Lust haben, an unseren Projekten teilzunehmen, sind herzlich
+              eingeladen. Ein Termin für das Vorspiel wird persönlich
+              vereinbart. Bei Interesse bitten wir Sie, das Kontaktformular
+              auszufüllen.
             </p>
             <div className="font-bold mt-6">
               <p>Wir freuen uns auf gemeinsame Projekte mit Ihnen.</p>
@@ -106,8 +114,7 @@ const Konzept = () => {
         </div>
       </motion.div>
 
-      {/* Form Section */}
-      <motion.div 
+      <motion.div
         ref={formRef}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

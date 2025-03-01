@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Footer } from "@/components";
 
-// Dummy team members data (change it based on your real data)
 const teamMembers = [
   {
     name: "Porjekt 1",
@@ -65,7 +64,6 @@ const Detalis = () => {
         </div>
       </div>
 
-      {/* Animated Projekte Title */}
       <motion.div
         initial={{ opacity: 0.3 }}
         animate={{ opacity: [0.6, 1, 0.6] }}
@@ -77,7 +75,6 @@ const Detalis = () => {
         </span>
       </motion.div>
 
-      {/* Team Section */}
       <section className="container mx-auto px-4 sm:px-6 md:px-8 py-12">
         <motion.div
           initial="hidden"
@@ -104,7 +101,6 @@ const Detalis = () => {
                 transition={{ type: "spring", stiffness: 200 }}
                 className="rounded-lg overflow-hidden cursor-pointer group relative"
               >
-                {/* Glow Effect */}
                 <div className="absolute inset-0 bg-transparent group-hover:bg-cyan-500/20 transition duration-500 rounded-lg"></div>
 
                 <Image
@@ -155,11 +151,8 @@ const Detalis = () => {
             </motion.div>
           ))}
         </motion.div>
-
-
       </section>
-        <Footer />
-      
+      <Footer />
     </main>
   );
 };

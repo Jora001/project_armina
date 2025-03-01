@@ -1,4 +1,4 @@
-"use client";  // ❗ Անհրաժեշտ է, որպեսզի `useState`-ը աշխատի
+"use client"; // ❗ Անհրաժեշտ է, որպեսզի `useState`-ը աշխատի
 
 import React, { useState } from "react";
 import { Cormorant_Garamond, Karla } from "next/font/google";
@@ -30,7 +30,6 @@ const Schule = () => {
 
   return (
     <div className="flex flex-col justify-center mt-[100px] bg-maincolor">
-      {/* Background Image with Title */}
       <div className="relative w-full">
         <Image
           src="/assets/images/schuller_background.svg"
@@ -51,7 +50,6 @@ const Schule = () => {
         </div>
       </div>
 
-      {/* Grid of Images with Play Icon */}
       <div
         className={`${my_font2.className} text-white grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 p-[20px] sm:p-[40px] md:p-[60px] lg:p-[90px]`}
       >
@@ -71,9 +69,12 @@ const Schule = () => {
               alt="pic"
               className="w-full h-auto filter brightness-[45%]"
             />
-            {/* Play Button */}
             <div className="absolute inset-0 flex flex-col items-center justify-center cursor-pointer">
-              <button onClick={() => openModal(`/assets/videos/video_${index + 1}.mp4`)}>
+              <button
+                onClick={() =>
+                  openModal(`/assets/videos/video_${index + 1}.mp4`)
+                }
+              >
                 <Image
                   src="/assets/images/play_logo.svg"
                   width={40}
@@ -90,21 +91,18 @@ const Schule = () => {
         ))}
       </div>
 
-      {/* View All Button */}
       <div className={`${my_font.className} flex justify-center`}>
         <button className="border-[#1E2B3B] border-solid border-[1px] w-[138px] h-[48px] text-[#1E2B3B] font-bold">
           Alles sehen
         </button>
       </div>
 
-      {/* Form Component */}
       <div className="relative">
         <div className="absolute left-0 right-0 flex justify-center">
           <Form />
         </div>
       </div>
 
-      {/* Video Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
           <div className="relative w-[80%] lg:w-[60%] xl:w-[50%] bg-black p-4 rounded-lg">
